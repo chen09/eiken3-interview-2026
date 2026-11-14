@@ -85,7 +85,11 @@ MAC_TTS_VOICE=Samantha python scripts/generate_audio.py
 
 题目及场景均为为本项目原创模拟材料，非官方试题。考试形式可参考日本英语检定协会的3级介绍：<https://www.eiken.or.jp/eiken/exam/grade_3/>。本工程不包含任何个人报名、账号、密码或实际成绩数据。
 
-## 网页版：在 Mac 上启动
+## 网页版
+
+在线使用：<https://chen09.github.io/eiken3-interview-2026/>。网页及其题目和答案是公开的；自评、进度和录音不会上传。
+
+### 在 Mac 上启动
 
 需要 Node.js 20.19 或更高版本。首次安装后，运行时无需网络；题库和媒体均在本地。
 
