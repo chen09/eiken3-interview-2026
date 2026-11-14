@@ -99,7 +99,7 @@ npm install
 npm run dev
 ```
 
-在 Mac 浏览器打开终端显示的 `http://localhost:5173/`。选择「練習モード」或「模擬試験」；每题点击播放，答完后手动进入下一题（适合不同答题速度，也避免 iPad 限制自动播放）。进度和自评保存在当前浏览器的 localStorage，清除浏览器数据会删除记录；所有模式均显示英文问题与参考答案，可分别播放语音。
+在 Mac 浏览器打开终端显示的 `http://localhost:5173/`。选择一套题并点击「練習をはじめる」，即可看到英文短文、第一道问题和参考答案。三项均有语音播放按钮，每题练习后手动进入下一题。进度和自评保存在当前浏览器的 localStorage，清除浏览器数据会删除记录；页面直接显示英文问题与参考答案，可分别播放语音。
 
 如需在 iPad 上访问 Mac 的本地服务，可用同一局域网中的 Mac 地址和终端显示的端口。进度保存在访问设备的浏览器中，不在不同设备间同步。
 
@@ -108,4 +108,4 @@ npm test       # 进度逻辑测试
 npm run build  # 静态网页输出到 web/dist/
 ```
 
-网页题目直接读取 `data/` 中的 JSON。练习模式直接显示英文短文、问题、参考答案，各自提供音频播放按钮。网页使用 `web/public/audio-neural/` 中的微软 Jenny 英语语音。参考答案音频可通过安装 edge-tts 7.3.1 后运行 `python3 web/generate_answer_audio.py` 生成，生成时需要网络，播放已生成的文件可离线进行。`web/prepare_audio.py` 用于旧版离线合成音频。题库修改后需要核对并更新对应音频，再重新构建。修改原 SVG 后也需将对应文件复制到 `web/public/scenes/`。原有 PDF 和音频重建命令保持不变。
+网页题目直接读取 `data/` 中的 JSON。训练页面直接显示英文短文、问题、参考答案，各自提供音频播放按钮。网页使用 `web/public/audio-neural/` 中的微软 Jenny 英语语音。参考答案音频可通过安装 edge-tts 7.3.1 后运行 `python3 web/generate_answer_audio.py` 生成，生成时需要网络，播放已生成的文件可离线进行。`web/prepare_audio.py` 用于旧版离线合成音频。题库修改后需要核对并更新对应音频，再重新构建。修改原 SVG 后也需将对应文件复制到 `web/public/scenes/`。原有 PDF 和音频重建命令保持不变。
