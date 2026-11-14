@@ -16,7 +16,31 @@
             "They can read books.",
             "They can find information for classes."
           ],
-          "tip": "根据短文找动作，不需要复述整段。"
+          "tip": "根据短文找动作，不需要复述整段。",
+          "translation": {
+            "prompt": {
+              "ja": "図書館で生徒たちは何ができますか。",
+              "zh": "学生们在图书馆可以做什么？"
+            },
+            "model": {
+              "ja": "本を読んだり、宿題をしたりできます。",
+              "zh": "他们可以读书和做作业。"
+            },
+            "alternatives": [
+              {
+                "ja": "本を読むことができます。",
+                "zh": "他们可以读书。"
+              },
+              {
+                "ja": "授業に必要な情報を調べることができます。",
+                "zh": "他们可以查找课堂所需的信息。"
+              }
+            ],
+            "tip": {
+              "ja": "本文から動作を探しましょう。全文を言い直す必要はありません。",
+              "zh": "根据短文找动作，不需要复述整段。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -25,7 +49,27 @@
           "alternatives": [
             "She is reading."
           ],
-          "tip": "现在进行时：She is + -ing。"
+          "tip": "现在进行时：She is + -ing。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女は本を読んでいます。",
+              "zh": "她正在读一本书。"
+            },
+            "alternatives": [
+              {
+                "ja": "彼女は読書をしています。",
+                "zh": "她正在读书。"
+              }
+            ],
+            "tip": {
+              "ja": "「She is + 動詞のing形」で、今していることを表します。",
+              "zh": "现在进行时：She is + -ing。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -34,7 +78,27 @@
           "alternatives": [
             "Three books."
           ],
-          "tip": "只数桌上右侧书堆，不包含女孩手里正在看的书。"
+          "tip": "只数桌上右侧书堆，不包含女孩手里正在看的书。",
+          "translation": {
+            "prompt": {
+              "ja": "テーブルの上に本は何冊ありますか。",
+              "zh": "桌子上有几本书？"
+            },
+            "model": {
+              "ja": "本が3冊あります。",
+              "zh": "有三本书。"
+            },
+            "alternatives": [
+              {
+                "ja": "3冊です。",
+                "zh": "三本书。"
+              }
+            ],
+            "tip": {
+              "ja": "テーブルの右側に積まれた本だけ数えます。女の子が読んでいる本は含めません。",
+              "zh": "只数桌上右侧书堆，不包含女孩手里正在看的书。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -44,7 +108,31 @@
             "I like playing video games.",
             "I like reading books."
           ],
-          "tip": "替换成孩子真实的兴趣更好。"
+          "tip": "替换成孩子真实的兴趣更好。",
+          "translation": {
+            "prompt": {
+              "ja": "放課後に何をするのが好きですか。",
+              "zh": "放学后你喜欢做什么？"
+            },
+            "model": {
+              "ja": "友達とサッカーをするのが好きです。",
+              "zh": "我喜欢和朋友们一起踢足球。"
+            },
+            "alternatives": [
+              {
+                "ja": "テレビゲームをするのが好きです。",
+                "zh": "我喜欢玩电子游戏。"
+              },
+              {
+                "ja": "本を読むのが好きです。",
+                "zh": "我喜欢读书。"
+              }
+            ],
+            "tip": {
+              "ja": "自分が本当に好きなことに置き換えましょう。",
+              "zh": "替换成孩子真实的兴趣更好。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -53,9 +141,39 @@
           "alternatives": [
             "No, I don't. I like watching movies."
           ],
-          "tip": "先 Yes/No，再补一句即可。"
+          "tip": "先 Yes/No，再补一句即可。",
+          "translation": {
+            "prompt": {
+              "ja": "本を読むのは好きですか。",
+              "zh": "你喜欢读书吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。冒険の物語が好きです。",
+              "zh": "是的，我喜欢。我喜欢冒险故事。"
+            },
+            "alternatives": [
+              {
+                "ja": "いいえ、好きではありません。映画を見るのが好きです。",
+                "zh": "不，我不喜欢。我喜欢看电影。"
+              }
+            ],
+            "tip": {
+              "ja": "まずYesかNoで答え、もう1文付け足しましょう。",
+              "zh": "先 Yes/No，再补一句即可。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "放課後の図書館",
+          "zh": "放学后的图书馆"
+        },
+        "passage": {
+          "ja": "多くの生徒は放課後に図書館へ行きます。本を読んだり、宿題をしたり、授業に必要な情報を調べたりします。図書館によっては、生徒が友達と一緒に勉強できる静かな部屋もあります。",
+          "zh": "很多学生放学后去图书馆。他们读书、做作业，并查找课堂所需的信息。有些图书馆有安静的房间，学生们可以在那里和朋友一起学习。"
+        }
+      }
     },
     {
       "id": "02",
@@ -70,7 +188,31 @@
             "They can play games.",
             "They can ride bicycles."
           ],
-          "tip": "回答一个原文中的活动就够。"
+          "tip": "回答一个原文中的活动就够。",
+          "translation": {
+            "prompt": {
+              "ja": "公園で子どもたちは何ができますか。",
+              "zh": "孩子们在公园可以做什么？"
+            },
+            "model": {
+              "ja": "ゲームをしたり、自転車に乗ったりできます。",
+              "zh": "他们可以玩游戏和骑自行车。"
+            },
+            "alternatives": [
+              {
+                "ja": "ゲームをすることができます。",
+                "zh": "他们可以玩游戏。"
+              },
+              {
+                "ja": "自転車に乗ることができます。",
+                "zh": "他们可以骑自行车。"
+              }
+            ],
+            "tip": {
+              "ja": "本文にある活動を1つ答えれば大丈夫です。",
+              "zh": "回答一个原文中的活动就够。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -79,7 +221,27 @@
           "alternatives": [
             "He is playing with a kite."
           ],
-          "tip": "fly a kite：放风筝。"
+          "tip": "fly a kite：放风筝。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何をしていますか。",
+              "zh": "那个男孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼はたこをあげています。",
+              "zh": "他正在放风筝。"
+            },
+            "alternatives": [
+              {
+                "ja": "彼はたこで遊んでいます。",
+                "zh": "他正在玩风筝。"
+              }
+            ],
+            "tip": {
+              "ja": "fly a kiteは「たこをあげる」という意味です。",
+              "zh": "fly a kite：放风筝。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -88,7 +250,27 @@
           "alternatives": [
             "Two dogs."
           ],
-          "tip": "数长椅附近的狗。"
+          "tip": "数长椅附近的狗。",
+          "translation": {
+            "prompt": {
+              "ja": "ベンチの近くに犬は何匹いますか。",
+              "zh": "长椅附近有几只狗？"
+            },
+            "model": {
+              "ja": "犬が2匹います。",
+              "zh": "有两只狗。"
+            },
+            "alternatives": [
+              {
+                "ja": "2匹です。",
+                "zh": "两只狗。"
+              }
+            ],
+            "tip": {
+              "ja": "ベンチの近くの犬を数えましょう。",
+              "zh": "数长椅附近的狗。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -98,7 +280,31 @@
             "I usually study at home.",
             "I usually visit my grandparents."
           ],
-          "tip": "usually + 动词原形。"
+          "tip": "usually + 动词原形。",
+          "translation": {
+            "prompt": {
+              "ja": "日曜日には普段何をしますか。",
+              "zh": "星期日你通常做什么？"
+            },
+            "model": {
+              "ja": "普段は友達とサッカーをします。",
+              "zh": "我通常和朋友们踢足球。"
+            },
+            "alternatives": [
+              {
+                "ja": "普段は家で勉強します。",
+                "zh": "我通常在家学习。"
+              },
+              {
+                "ja": "普段は祖父母の家を訪ねます。",
+                "zh": "我通常去看望祖父母。"
+              }
+            ],
+            "tip": {
+              "ja": "usuallyの後ろは動詞の原形を使います。",
+              "zh": "usually + 动词原形。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -107,9 +313,39 @@
           "alternatives": [
             "No, I don't. I prefer staying at home."
           ],
-          "tip": "说出自己的真实情况即可。"
+          "tip": "说出自己的真实情况即可。",
+          "translation": {
+            "prompt": {
+              "ja": "公園に行くのは好きですか。",
+              "zh": "你喜欢去公园吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。外で遊ぶのが好きです。",
+              "zh": "是的，我喜欢。我喜欢在外面玩。"
+            },
+            "alternatives": [
+              {
+                "ja": "いいえ、好きではありません。家にいる方が好きです。",
+                "zh": "不，我不喜欢。我更喜欢待在家里。"
+              }
+            ],
+            "tip": {
+              "ja": "自分の本当のことを話しましょう。",
+              "zh": "说出自己的真实情况即可。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "公園で過ごす一日",
+          "zh": "公园里的一天"
+        },
+        "passage": {
+          "ja": "多くの家族は週末に公園へ行きます。子どもたちはゲームをしたり、自転車に乗ったり、新鮮な空気を楽しんだりできます。木の下で一緒に昼ご飯を食べ、午後ずっと公園で過ごす家族もいます。",
+          "zh": "很多家庭周末去公园。孩子们可以玩游戏、骑自行车，享受新鲜空气。有些家庭在树下一起吃午饭，整个下午都待在那里。"
+        }
+      }
     },
     {
       "id": "03",
@@ -123,7 +359,27 @@
           "alternatives": [
             "They can learn how to cook."
           ],
-          "tip": "原文关键语句：learn how to make simple food。"
+          "tip": "原文关键语句：learn how to make simple food。",
+          "translation": {
+            "prompt": {
+              "ja": "家族と料理をすることで、子どもたちは何を学べますか。",
+              "zh": "孩子们和家人一起做饭能学到什么？"
+            },
+            "model": {
+              "ja": "簡単な食べ物の作り方を学べます。",
+              "zh": "他们可以学习制作简单食物的方法。"
+            },
+            "alternatives": [
+              {
+                "ja": "料理の仕方を学べます。",
+                "zh": "他们可以学习如何做饭。"
+              }
+            ],
+            "tip": {
+              "ja": "本文のlearn how to make simple foodが答えの手がかりです。",
+              "zh": "原文关键语句：learn how to make simple food。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -132,7 +388,27 @@
           "alternatives": [
             "He is going to wash a plate."
           ],
-          "tip": "男孩正拿盘子走向水槽。be going to + 动词。"
+          "tip": "男孩正拿盘子走向水槽。be going to + 动词。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子はこれから何をするところですか。",
+              "zh": "那个男孩接下来打算做什么？"
+            },
+            "model": {
+              "ja": "彼はこれから食器を洗うところです。",
+              "zh": "他接下来打算洗餐具。"
+            },
+            "alternatives": [
+              {
+                "ja": "彼はこれからお皿を洗うところです。",
+                "zh": "他接下来打算洗一个盘子。"
+              }
+            ],
+            "tip": {
+              "ja": "男の子はお皿を持って流しの近くにいます。「be going to + 動詞の原形」で、これからすることを表します。",
+              "zh": "男孩正拿盘子走向水槽。be going to + 动词。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -141,7 +417,27 @@
           "alternatives": [
             "Under the table."
           ],
-          "tip": "under：在……下面。"
+          "tip": "under：在……下面。",
+          "translation": {
+            "prompt": {
+              "ja": "猫はどこにいますか。",
+              "zh": "猫在哪里？"
+            },
+            "model": {
+              "ja": "テーブルの下にいます。",
+              "zh": "它在桌子下面。"
+            },
+            "alternatives": [
+              {
+                "ja": "テーブルの下です。",
+                "zh": "在桌子下面。"
+              }
+            ],
+            "tip": {
+              "ja": "underは「〜の下に」という意味です。",
+              "zh": "under：在……下面。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -151,7 +447,31 @@
             "I like pizza.",
             "I like sushi."
           ],
-          "tip": "不要求复杂原因，清楚回答即可。"
+          "tip": "不要求复杂原因，清楚回答即可。",
+          "translation": {
+            "prompt": {
+              "ja": "どんな食べ物が好きですか。",
+              "zh": "你喜欢什么食物？"
+            },
+            "model": {
+              "ja": "おいしいのでカレーライスが好きです。",
+              "zh": "我喜欢咖喱饭，因为它很好吃。"
+            },
+            "alternatives": [
+              {
+                "ja": "ピザが好きです。",
+                "zh": "我喜欢比萨。"
+              },
+              {
+                "ja": "すしが好きです。",
+                "zh": "我喜欢寿司。"
+              }
+            ],
+            "tip": {
+              "ja": "難しい理由を言う必要はありません。分かりやすく答えましょう。",
+              "zh": "不要求复杂原因，清楚回答即可。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -161,9 +481,43 @@
             "Yes, I do. I clean my room.",
             "No, I don't, but I want to help more."
           ],
-          "tip": "自然回答，别背特别长的句子。"
+          "tip": "自然回答，别背特别长的句子。",
+          "translation": {
+            "prompt": {
+              "ja": "家で家族の手伝いをしますか。",
+              "zh": "你在家会帮家人做事吗？"
+            },
+            "model": {
+              "ja": "はい、します。時々食器を洗います。",
+              "zh": "是的，我会。我有时洗餐具。"
+            },
+            "alternatives": [
+              {
+                "ja": "はい、します。自分の部屋を掃除します。",
+                "zh": "是的，我会。我打扫自己的房间。"
+              },
+              {
+                "ja": "いいえ、していませんが、もっと手伝いたいです。",
+                "zh": "不，我没有，但我想多帮一点忙。"
+              }
+            ],
+            "tip": {
+              "ja": "自然に答えましょう。長すぎる文を丸暗記する必要はありません。",
+              "zh": "自然回答，别背特别长的句子。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "家で料理をする",
+          "zh": "在家做饭"
+        },
+        "passage": {
+          "ja": "家族と料理をすることは、新しいことを楽しく学ぶ方法です。子どもたちは簡単な食べ物の作り方を学び、人の手伝いをすることができます。家族は自分たちで一緒に作った料理を食べることをよく楽しみます。",
+          "zh": "和家人一起做饭是学习新事物的一种有趣方式。孩子们可以学习制作简单食物，也可以帮助别人。家人们常常一起享用他们共同制作的饭菜。"
+        }
+      }
     },
     {
       "id": "04",
@@ -177,7 +531,27 @@
           "alternatives": [
             "Because they can make friends."
           ],
-          "tip": "Why 开头，建议用 Because 回答。"
+          "tip": "Why 开头，建议用 Because 回答。",
+          "translation": {
+            "prompt": {
+              "ja": "スポーツをすることは、なぜ生徒たちにとってよいのですか。",
+              "zh": "为什么运动对学生有益？"
+            },
+            "model": {
+              "ja": "健康によいからです。",
+              "zh": "因为这有益于他们的健康。"
+            },
+            "alternatives": [
+              {
+                "ja": "友達を作ることができるからです。",
+                "zh": "因为他们可以交到朋友。"
+              }
+            ],
+            "tip": {
+              "ja": "Whyで聞かれたら、Becauseで答えてみましょう。",
+              "zh": "Why 开头，建议用 Because 回答。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -186,7 +560,27 @@
           "alternatives": [
             "She is practicing tennis."
           ],
-          "tip": "She is + -ing。"
+          "tip": "She is + -ing。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女はテニスをしています。",
+              "zh": "她正在打网球。"
+            },
+            "alternatives": [
+              {
+                "ja": "彼女はテニスの練習をしています。",
+                "zh": "她正在练习网球。"
+              }
+            ],
+            "tip": {
+              "ja": "「She is + 動詞のing形」を使います。",
+              "zh": "使用 She is 加动词的 -ing 形式，描述正在进行的动作。"
+            }
+          }
         },
         {
           "kind": "picture",
@@ -195,7 +589,27 @@
           "alternatives": [
             "Three balls."
           ],
-          "tip": "图中场地上有三个球。"
+          "tip": "图中场地上有三个球。",
+          "translation": {
+            "prompt": {
+              "ja": "地面にテニスボールはいくつありますか。",
+              "zh": "地上有几个网球？"
+            },
+            "model": {
+              "ja": "テニスボールが3個あります。",
+              "zh": "有三个网球。"
+            },
+            "alternatives": [
+              {
+                "ja": "ボールが3個です。",
+                "zh": "三个球。"
+              }
+            ],
+            "tip": {
+              "ja": "地面にあるボールは3個です。",
+              "zh": "图中场地上有三个球。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -205,7 +619,31 @@
             "I like soccer best.",
             "I like tennis best."
           ],
-          "tip": "best = 最喜欢。"
+          "tip": "best = 最喜欢。",
+          "translation": {
+            "prompt": {
+              "ja": "どのスポーツが一番好きですか。",
+              "zh": "你最喜欢什么运动？"
+            },
+            "model": {
+              "ja": "バスケットボールが一番好きです。",
+              "zh": "我最喜欢篮球。"
+            },
+            "alternatives": [
+              {
+                "ja": "サッカーが一番好きです。",
+                "zh": "我最喜欢足球。"
+              },
+              {
+                "ja": "テニスが一番好きです。",
+                "zh": "我最喜欢网球。"
+              }
+            ],
+            "tip": {
+              "ja": "bestはここでは「一番好き」という意味です。",
+              "zh": "best = 最喜欢。"
+            }
+          }
         },
         {
           "kind": "personal",
@@ -214,9 +652,39 @@
           "alternatives": [
             "No, I don't. I want to join the music club."
           ],
-          "tip": "不必勉强说喜欢运动，可讲真实兴趣。"
+          "tip": "不必勉强说喜欢运动，可讲真实兴趣。",
+          "translation": {
+            "prompt": {
+              "ja": "運動部に入りたいですか。",
+              "zh": "你想加入运动社团吗？"
+            },
+            "model": {
+              "ja": "はい、入りたいです。バスケットボールをしたいです。",
+              "zh": "是的，我想。我想打篮球。"
+            },
+            "alternatives": [
+              {
+                "ja": "いいえ、入りたくありません。音楽部に入りたいです。",
+                "zh": "不，我不想。我想加入音乐社团。"
+              }
+            ],
+            "tip": {
+              "ja": "無理にスポーツが好きだと言わず、自分の本当の興味を話しましょう。",
+              "zh": "不必勉强说喜欢运动，可讲真实兴趣。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "学校の運動部",
+          "zh": "学校的运动社团"
+        },
+        "passage": {
+          "ja": "多くの学校には生徒のための運動部があります。スポーツをすることは健康によく、友達を作るのにも役立ちます。生徒たちは放課後に練習し、時々ほかの学校と試合をします。",
+          "zh": "很多学校都有供学生参加的运动社团。运动有益健康，也有助于交朋友。学生们放学后练习，有时会和其他学校比赛。"
+        }
+      }
     },
     {
       "id": "05",
@@ -230,37 +698,122 @@
           "prompt": "Why do students water the plants every morning?",
           "model": "Because they can learn how to take care of living things.",
           "alternatives": [],
-          "tip": "Why 问原因，用 Because 回答，答案在 so 后面。"
+          "tip": "Why 问原因，用 Because 回答，答案在 so 后面。",
+          "translation": {
+            "prompt": {
+              "ja": "生徒たちは、なぜ毎朝植物に水をあげるのですか。",
+              "zh": "学生们为什么每天早上给植物浇水？"
+            },
+            "model": {
+              "ja": "生き物の世話の仕方を学べるからです。",
+              "zh": "因为他们可以学习如何照顾生物。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "Whyは理由をたずねています。Becauseで答えます。手がかりはsoの後ろにあります。",
+              "zh": "Why 问原因，用 Because 回答，答案在 so 后面。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl doing?",
           "model": "She is watering the flowers.",
           "alternatives": [],
-          "tip": "water 在这里是动词，意思是浇水。"
+          "tip": "water 在这里是动词，意思是浇水。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女は花に水をあげています。",
+              "zh": "她正在给花浇水。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ここでのwaterは「水をあげる」という動詞です。",
+              "zh": "water 在这里是动词，意思是浇水。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many flowerpots are on the ground?",
           "model": "There are three flowerpots.",
           "alternatives": [],
-          "tip": "只数地上的三个花盆。"
+          "tip": "只数地上的三个花盆。",
+          "translation": {
+            "prompt": {
+              "ja": "地面に植木鉢はいくつありますか。",
+              "zh": "地上有几个花盆？"
+            },
+            "model": {
+              "ja": "植木鉢が3個あります。",
+              "zh": "有三个花盆。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "地面にある3個の植木鉢だけ数えましょう。",
+              "zh": "只数地上的三个花盆。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What vegetables do you like?",
           "model": "I like tomatoes because they are sweet.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どんな野菜が好きですか。",
+              "zh": "你喜欢什么蔬菜？"
+            },
+            "model": {
+              "ja": "甘いのでトマトが好きです。",
+              "zh": "我喜欢番茄，因为它们很甜。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like growing plants?",
           "model": "Yes, I do. I grow flowers at home.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "植物を育てるのは好きですか。",
+              "zh": "你喜欢种植物吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。家で花を育てています。",
+              "zh": "是的，我喜欢。我在家种花。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "学校の庭",
+          "zh": "学校的小花园"
+        },
+        "passage": {
+          "ja": "小さな庭がある学校もあります。生徒たちはそこで野菜や花を育てます。毎朝植物に水をあげることで、生き物の世話の仕方を学べます。",
+          "zh": "有些学校有小花园。学生们在那里种蔬菜和花。他们每天早上给植物浇水，这样就能学习如何照顾生物。"
+        }
+      }
     },
     {
       "id": "06",
@@ -274,37 +827,122 @@
           "prompt": "Why do people often ride along rivers on sunny days?",
           "model": "Because they can enjoy the scenery.",
           "alternatives": [],
-          "tip": "scenery 是风景，原因在 so 前面。"
+          "tip": "scenery 是风景，原因在 so 前面。",
+          "translation": {
+            "prompt": {
+              "ja": "人々は、なぜ晴れた日に川沿いをよく自転車で走るのですか。",
+              "zh": "人们为什么常在晴天沿着河边骑自行车？"
+            },
+            "model": {
+              "ja": "景色を楽しめるからです。",
+              "zh": "因为他们可以欣赏风景。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "sceneryは「景色」です。理由はsoの前にあります。",
+              "zh": "scenery 是风景，原因在 so 前面。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy doing?",
           "model": "He is riding a bicycle.",
           "alternatives": [],
-          "tip": "ride a bicycle 表示骑自行车。"
+          "tip": "ride a bicycle 表示骑自行车。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何をしていますか。",
+              "zh": "那个男孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼は自転車に乗っています。",
+              "zh": "他正在骑自行车。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ride a bicycleは「自転車に乗る」という意味です。",
+              "zh": "ride a bicycle 表示骑自行车。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many birds are in the tree?",
           "model": "There are two birds.",
           "alternatives": [],
-          "tip": "数树枝上的两只鸟。"
+          "tip": "数树枝上的两只鸟。",
+          "translation": {
+            "prompt": {
+              "ja": "木に鳥は何羽いますか。",
+              "zh": "树上有几只鸟？"
+            },
+            "model": {
+              "ja": "鳥が2羽います。",
+              "zh": "有两只鸟。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "木の枝にいる2羽の鳥を数えましょう。",
+              "zh": "数树枝上的两只鸟。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "How do you usually go to school?",
           "model": "I usually walk to school.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "普段はどうやって学校に行きますか。",
+              "zh": "你通常怎样去学校？"
+            },
+            "model": {
+              "ja": "普段は歩いて学校に行きます。",
+              "zh": "我通常步行去学校。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you have a bicycle?",
           "model": "Yes, I do. I ride it on weekends.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "自転車を持っていますか。",
+              "zh": "你有自行车吗？"
+            },
+            "model": {
+              "ja": "はい、持っています。週末に乗ります。",
+              "zh": "是的，我有。我周末骑自行车。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "自転車に乗る",
+          "zh": "骑自行车"
+        },
+        "passage": {
+          "ja": "多くの人は自分の町で自転車に乗ります。自転車に乗ることはよい運動になります。景色も楽しめるので、晴れた日には川沿いをよく自転車で走ります。",
+          "zh": "很多人在自己居住的城镇里骑自行车。骑自行车是一种很好的运动。人们还能欣赏风景，所以他们常在晴天沿河骑行。"
+        }
+      }
     },
     {
       "id": "07",
@@ -318,37 +956,122 @@
           "prompt": "Why do some students practice in the music room?",
           "model": "Because music helps them relax.",
           "alternatives": [],
-          "tip": "relax 表示放松，原因句用 Because 开头。"
+          "tip": "relax 表示放松，原因句用 Because 开头。",
+          "translation": {
+            "prompt": {
+              "ja": "音楽室で練習する生徒がいるのはなぜですか。",
+              "zh": "为什么有些学生在音乐教室练习？"
+            },
+            "model": {
+              "ja": "音楽は気持ちを落ち着かせてくれるからです。",
+              "zh": "因为音乐能让他们放松。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "relaxは「くつろぐ、気持ちを落ち着かせる」です。Becauseから理由を答えましょう。",
+              "zh": "relax 表示放松，原因句用 Because 开头。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl doing?",
           "model": "She is playing the piano.",
           "alternatives": [],
-          "tip": "乐器前一般加 the。"
+          "tip": "乐器前一般加 the。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女はピアノを弾いています。",
+              "zh": "她正在弹钢琴。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "楽器を演奏するとき、楽器名の前には普通theを付けます。",
+              "zh": "乐器前一般加 the。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many chairs are near the piano?",
           "model": "There are three chairs.",
           "alternatives": [],
-          "tip": "只数钢琴旁边的三把空椅子。"
+          "tip": "只数钢琴旁边的三把空椅子。",
+          "translation": {
+            "prompt": {
+              "ja": "ピアノの近くにいすは何脚ありますか。",
+              "zh": "钢琴附近有几把椅子？"
+            },
+            "model": {
+              "ja": "いすが3脚あります。",
+              "zh": "有三把椅子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ピアノの隣の空いているいす3脚だけ数えましょう。",
+              "zh": "只数钢琴旁边的三把空椅子。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What kind of music do you like?",
           "model": "I like pop music.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どんな種類の音楽が好きですか。",
+              "zh": "你喜欢什么类型的音乐？"
+            },
+            "model": {
+              "ja": "ポップミュージックが好きです。",
+              "zh": "我喜欢流行音乐。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Can you play a musical instrument?",
           "model": "Yes, I can. I can play the guitar.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "楽器を演奏できますか。",
+              "zh": "你会演奏乐器吗？"
+            },
+            "model": {
+              "ja": "はい、できます。ギターを弾けます。",
+              "zh": "是的，我会。我会弹吉他。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "みんなで音楽を楽しむ",
+          "zh": "一起演奏音乐"
+        },
+        "passage": {
+          "ja": "多くの生徒は一緒に音楽を演奏することを楽しんでいます。授業の後に楽器を演奏します。音楽は気持ちを落ち着かせてくれるので、暇なときに音楽室で練習する生徒もいます。",
+          "zh": "很多学生喜欢一起演奏音乐。他们课后演奏乐器。音乐能让他们放松，所以有些学生有空时会在音乐教室练习。"
+        }
+      }
     },
     {
       "id": "08",
@@ -362,37 +1085,122 @@
           "prompt": "What can people buy near their homes?",
           "model": "They can buy fresh food.",
           "alternatives": [],
-          "tip": "用 They can 加上短文中的动作。"
+          "tip": "用 They can 加上短文中的动作。",
+          "translation": {
+            "prompt": {
+              "ja": "人々は家の近くで何を買うことができますか。",
+              "zh": "人们在家附近可以买到什么？"
+            },
+            "model": {
+              "ja": "新鮮な食べ物を買うことができます。",
+              "zh": "他们可以买到新鲜的食物。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "They canの後ろに、本文にある動作を続けましょう。",
+              "zh": "用 They can 加上短文中的动作。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy holding?",
           "model": "He is holding a shopping bag.",
           "alternatives": [],
-          "tip": "hold 表示拿着，注意 is holding。"
+          "tip": "hold 表示拿着，注意 is holding。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何を持っていますか。",
+              "zh": "那个男孩手里拿着什么？"
+            },
+            "model": {
+              "ja": "彼は買い物袋を持っています。",
+              "zh": "他正拿着一个购物袋。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "holdは「持つ」です。is holdingの形に注意しましょう。",
+              "zh": "hold 表示拿着，注意 is holding。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many apples are on the table?",
           "model": "There are four apples.",
           "alternatives": [],
-          "tip": "只数桌面上分开的四个苹果。"
+          "tip": "只数桌面上分开的四个苹果。",
+          "translation": {
+            "prompt": {
+              "ja": "テーブルの上にりんごはいくつありますか。",
+              "zh": "桌子上有几个苹果？"
+            },
+            "model": {
+              "ja": "りんごが4個あります。",
+              "zh": "有四个苹果。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "テーブルの上に並んでいる4個のりんごだけ数えましょう。",
+              "zh": "只数桌面上分开的四个苹果。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you usually buy at convenience stores?",
           "model": "I usually buy bread and milk.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "コンビニで普段何を買いますか。",
+              "zh": "你通常在便利店买什么？"
+            },
+            "model": {
+              "ja": "普段はパンと牛乳を買います。",
+              "zh": "我通常买面包和牛奶。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like shopping with your family?",
           "model": "Yes, I do. We often buy food together.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "家族と買い物をするのは好きですか。",
+              "zh": "你喜欢和家人一起购物吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。よく一緒に食べ物を買います。",
+              "zh": "是的，我喜欢。我们经常一起买食物。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "町のお店",
+          "zh": "社区的小商店"
+        },
+        "passage": {
+          "ja": "小さなお店は多くの町で大切な存在です。人々は家の近くで新鮮な食べ物を買うことができます。店主はお客さんとよく話すので、そこでの買い物は温かい交流の機会になることがあります。",
+          "zh": "小商店在很多城镇里很重要。人们在家附近就可以买到新鲜食物。店主经常和顾客交谈，所以在那里购物可以成为一种亲切友好的体验。"
+        }
+      }
     },
     {
       "id": "09",
@@ -406,37 +1214,122 @@
           "prompt": "What can visitors learn about at zoos?",
           "model": "They can learn about animals and their lives.",
           "alternatives": [],
-          "tip": "their lives 指动物们的生活。"
+          "tip": "their lives 指动物们的生活。",
+          "translation": {
+            "prompt": {
+              "ja": "動物園では、来た人たちは何について学べますか。",
+              "zh": "游客在动物园可以了解什么？"
+            },
+            "model": {
+              "ja": "動物やその生活について学べます。",
+              "zh": "他们可以了解动物及其生活。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "their livesは「動物たちの生活」を指します。",
+              "zh": "their lives 指动物们的生活。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the woman holding?",
           "model": "She is holding a camera.",
           "alternatives": [],
-          "tip": "camera 表示照相机，is holding 表示正拿着。"
+          "tip": "camera 表示照相机，is holding 表示正拿着。",
+          "translation": {
+            "prompt": {
+              "ja": "女性は何を持っていますか。",
+              "zh": "那位女士手里拿着什么？"
+            },
+            "model": {
+              "ja": "彼女はカメラを持っています。",
+              "zh": "她正拿着一台照相机。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "cameraは「カメラ」、is holdingは「持っている」です。",
+              "zh": "camera 表示照相机，is holding 表示正拿着。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many rabbits are near the fence?",
           "model": "There are two rabbits.",
           "alternatives": [],
-          "tip": "数围栏旁的两只兔子。"
+          "tip": "数围栏旁的两只兔子。",
+          "translation": {
+            "prompt": {
+              "ja": "柵の近くにうさぎは何匹いますか。",
+              "zh": "围栏附近有几只兔子？"
+            },
+            "model": {
+              "ja": "うさぎが2匹います。",
+              "zh": "有两只兔子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "柵の近くの2匹のうさぎを数えましょう。",
+              "zh": "数围栏旁的两只兔子。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What animal do you like best?",
           "model": "I like penguins best.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どの動物が一番好きですか。",
+              "zh": "你最喜欢什么动物？"
+            },
+            "model": {
+              "ja": "ペンギンが一番好きです。",
+              "zh": "我最喜欢企鹅。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Have you ever visited a zoo?",
           "model": "Yes, I have. I saw pandas last year.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "動物園に行ったことがありますか。",
+              "zh": "你去过动物园吗？"
+            },
+            "model": {
+              "ja": "はい、あります。去年パンダを見ました。",
+              "zh": "是的，我去过。去年我看到了熊猫。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "動物園に行く",
+          "zh": "参观动物园"
+        },
+        "passage": {
+          "ja": "動物園は家族連れに人気の場所です。来た人たちはさまざまな動物を見て、その生活について学べます。特別なお話の時間を設けている動物園もあるので、子どもたちは動物について質問することができます。",
+          "zh": "动物园是很受家庭欢迎的地方。游客可以看到许多动物，并了解它们的生活。有些动物园设有专题讲解，因此孩子们可以提出关于动物的问题。"
+        }
+      }
     },
     {
       "id": "10",
@@ -450,37 +1343,122 @@
           "prompt": "What can children play with their families on rainy days?",
           "model": "They can play board games.",
           "alternatives": [],
-          "tip": "注意题目问 play 什么游戏。"
+          "tip": "注意题目问 play 什么游戏。",
+          "translation": {
+            "prompt": {
+              "ja": "雨の日に、子どもたちは家族とどんなゲームを楽しめますか。",
+              "zh": "下雨天，孩子们可以和家人一起玩什么游戏？"
+            },
+            "model": {
+              "ja": "ボードゲームを楽しめます。",
+              "zh": "他们可以玩桌游。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "どんなゲームをplayできるかを聞かれています。",
+              "zh": "注意题目问 play 什么游戏。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl holding?",
           "model": "She is holding an umbrella.",
           "alternatives": [],
-          "tip": "umbrella 是元音开头，用 an。"
+          "tip": "umbrella 是元音开头，用 an。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何を持っていますか。",
+              "zh": "那个女孩手里拿着什么？"
+            },
+            "model": {
+              "ja": "彼女は傘を持っています。",
+              "zh": "她正拿着一把伞。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "umbrellaは母音の音で始まるので、前にanを使います。",
+              "zh": "umbrella 是元音开头，用 an。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many umbrellas are in the stand?",
           "model": "There are three umbrellas.",
           "alternatives": [],
-          "tip": "只数伞架里的三把伞，不包括女孩手中的伞。"
+          "tip": "只数伞架里的三把伞，不包括女孩手中的伞。",
+          "translation": {
+            "prompt": {
+              "ja": "傘立てに傘は何本ありますか。",
+              "zh": "伞架里有几把伞？"
+            },
+            "model": {
+              "ja": "傘が3本あります。",
+              "zh": "有三把伞。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "傘立ての3本だけ数えます。女の子が持つ傘は含めません。",
+              "zh": "只数伞架里的三把伞，不包括女孩手中的伞。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you do when it rains?",
           "model": "I usually read books at home.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "雨が降ったときには何をしますか。",
+              "zh": "下雨时你会做什么？"
+            },
+            "model": {
+              "ja": "普段は家で本を読みます。",
+              "zh": "我通常在家读书。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you enjoy playing board games?",
           "model": "Yes, I do. I play them with my brother.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "ボードゲームをするのは好きですか。",
+              "zh": "你喜欢玩桌游吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。兄弟と一緒に遊びます。",
+              "zh": "是的，我喜欢。我和兄弟一起玩。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "雨の日",
+          "zh": "下雨天"
+        },
+        "passage": {
+          "ja": "雨の日も家で楽しく過ごせます。子どもたちは絵を描いたり、家族とボードゲームをしたりできます。物語を読んだり、一緒に静かな午後を楽しんだりすることもできます。",
+          "zh": "下雨天在家也可以很有趣。孩子们可以画画，或和家人玩桌游。他们还可以读故事，一起享受安静的下午。"
+        }
+      }
     },
     {
       "id": "11",
@@ -494,37 +1472,122 @@
           "prompt": "Why do volunteers collect rubbish every week?",
           "model": "Because visitors can enjoy a clean and safe beach.",
           "alternatives": [],
-          "tip": "rubbish 是垃圾，找 so 后面的结果来回答。"
+          "tip": "rubbish 是垃圾，找 so 后面的结果来回答。",
+          "translation": {
+            "prompt": {
+              "ja": "ボランティアは、なぜ毎週ごみを集めるのですか。",
+              "zh": "志愿者为什么每周收集垃圾？"
+            },
+            "model": {
+              "ja": "来た人たちがきれいで安全な海岸を楽しめるからです。",
+              "zh": "因为游客可以享受干净、安全的海滩。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "rubbishは「ごみ」です。soの後ろの結果を手がかりに答えましょう。",
+              "zh": "rubbish 是垃圾，找 so 后面的结果来回答。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy picking up?",
           "model": "He is picking up a bottle.",
           "alternatives": [],
-          "tip": "pick up 表示捡起。"
+          "tip": "pick up 表示捡起。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何を拾っていますか。",
+              "zh": "那个男孩正在捡什么？"
+            },
+            "model": {
+              "ja": "彼はボトルを拾っています。",
+              "zh": "他正在捡一个瓶子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "pick upは「拾う」という意味です。",
+              "zh": "pick up 表示捡起。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many balls are on the sand?",
           "model": "There are three balls.",
           "alternatives": [],
-          "tip": "只数沙地上的三个球。"
+          "tip": "只数沙地上的三个球。",
+          "translation": {
+            "prompt": {
+              "ja": "砂の上にボールはいくつありますか。",
+              "zh": "沙地上有几个球？"
+            },
+            "model": {
+              "ja": "ボールが3個あります。",
+              "zh": "有三个球。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "砂の上の3個のボールだけ数えましょう。",
+              "zh": "只数沙地上的三个球。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you like to do in summer?",
           "model": "I like to swim in the sea.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "夏には何をするのが好きですか。",
+              "zh": "夏天你喜欢做什么？"
+            },
+            "model": {
+              "ja": "海で泳ぐのが好きです。",
+              "zh": "我喜欢在海里游泳。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you want to help clean a beach?",
           "model": "Yes, I do. I want to protect animals.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "海岸の掃除を手伝いたいですか。",
+              "zh": "你想帮忙清理海滩吗？"
+            },
+            "model": {
+              "ja": "はい、手伝いたいです。動物を守りたいです。",
+              "zh": "是的，我想。我想保护动物。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "海岸をきれいにする",
+          "zh": "保持海滩清洁"
+        },
+        "passage": {
+          "ja": "多くの人は夏に海岸へ行くことを楽しみにしています。砂浜でごみを見つけることもあります。ボランティアが毎週ごみを集めるので、来た人たちはきれいで安全な海岸を楽しめます。",
+          "zh": "很多人喜欢在夏天去海滩。有时他们会在沙地上发现垃圾。志愿者每周收集垃圾，让游客可以享受干净、安全的海滩。"
+        }
+      }
     },
     {
       "id": "12",
@@ -538,37 +1601,122 @@
           "prompt": "What can students write with computers?",
           "model": "They can write reports.",
           "alternatives": [],
-          "tip": "write reports 表示写报告。"
+          "tip": "write reports 表示写报告。",
+          "translation": {
+            "prompt": {
+              "ja": "生徒たちはコンピューターで何を書くことができますか。",
+              "zh": "学生们可以用电脑写什么？"
+            },
+            "model": {
+              "ja": "レポートを書くことができます。",
+              "zh": "他们可以写报告。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "write reportsは「レポートを書く」という意味です。",
+              "zh": "write reports 表示写报告。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy using?",
           "model": "He is using a computer.",
           "alternatives": [],
-          "tip": "用 is using 回答正在使用的东西。"
+          "tip": "用 is using 回答正在使用的东西。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何を使っていますか。",
+              "zh": "那个男孩正在使用什么？"
+            },
+            "model": {
+              "ja": "彼はコンピューターを使っています。",
+              "zh": "他正在使用电脑。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "is usingを使って、今使っている物を答えましょう。",
+              "zh": "用 is using 回答正在使用的东西。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many pencils are next to the computer?",
           "model": "There are two pencils.",
           "alternatives": [],
-          "tip": "只数电脑旁的两支铅笔。"
+          "tip": "只数电脑旁的两支铅笔。",
+          "translation": {
+            "prompt": {
+              "ja": "コンピューターの隣に鉛筆は何本ありますか。",
+              "zh": "电脑旁边有几支铅笔？"
+            },
+            "model": {
+              "ja": "鉛筆が2本あります。",
+              "zh": "有两支铅笔。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "コンピューターの隣の2本の鉛筆だけ数えましょう。",
+              "zh": "只数电脑旁的两支铅笔。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you use a computer for?",
           "model": "I use it to study English.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "何のためにコンピューターを使いますか。",
+              "zh": "你用电脑做什么？"
+            },
+            "model": {
+              "ja": "英語の勉強に使います。",
+              "zh": "我用它来学英语。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like working in a group?",
           "model": "Yes, I do. I can learn from my friends.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "グループで活動するのは好きですか。",
+              "zh": "你喜欢小组合作吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。友達から学べるからです。",
+              "zh": "是的，我喜欢。我可以向朋友们学习。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "コンピューターを使う",
+          "zh": "使用电脑"
+        },
+        "passage": {
+          "ja": "コンピューターは学校の課題に役立ちます。生徒たちは情報を調べたり、レポートを書いたりできます。学習した内容を簡単に共有できるので、多くの授業ではグループ活動にコンピューターを使います。",
+          "zh": "电脑对学校的学习任务很有用。学生们可以用电脑查找信息、写报告。他们能方便地分享自己的成果，所以很多课堂会在小组活动中使用电脑。"
+        }
+      }
     },
     {
       "id": "13",
@@ -582,37 +1730,122 @@
           "prompt": "Why do some children take photos in winter?",
           "model": "Because they want to remember these special days.",
           "alternatives": [],
-          "tip": "because 后面的句子直接给出了原因。"
+          "tip": "because 后面的句子直接给出了原因。",
+          "translation": {
+            "prompt": {
+              "ja": "冬に写真を撮る子どもたちがいるのはなぜですか。",
+              "zh": "为什么有些孩子在冬天拍照？"
+            },
+            "model": {
+              "ja": "特別な日々を覚えておきたいからです。",
+              "zh": "因为他们想记住这些特别的日子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "becauseの後ろに理由が書かれています。",
+              "zh": "because 后面的句子直接给出了原因。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl making?",
           "model": "She is making a snowman.",
           "alternatives": [],
-          "tip": "make 的进行时是 making。"
+          "tip": "make 的进行时是 making。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何を作っていますか。",
+              "zh": "那个女孩正在做什么东西？"
+            },
+            "model": {
+              "ja": "彼女は雪だるまを作っています。",
+              "zh": "她正在堆雪人。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "makeのing形はmakingです。",
+              "zh": "make 的进行时是 making。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many snowmen are in the picture?",
           "model": "There are two snowmen.",
           "alternatives": [],
-          "tip": "包括女孩正在做的雪人，共两个。"
+          "tip": "包括女孩正在做的雪人，共两个。",
+          "translation": {
+            "prompt": {
+              "ja": "絵の中に雪だるまはいくつありますか。",
+              "zh": "图中有几个雪人？"
+            },
+            "model": {
+              "ja": "雪だるまが2つあります。",
+              "zh": "有两个雪人。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "女の子が作っているものも含め、雪だるまは2つです。",
+              "zh": "包括女孩正在做的雪人，共两个。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What season do you like best?",
           "model": "I like winter best because I enjoy snow.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どの季節が一番好きですか。",
+              "zh": "你最喜欢哪个季节？"
+            },
+            "model": {
+              "ja": "雪で遊ぶのが好きなので、冬が一番好きです。",
+              "zh": "我最喜欢冬天，因为我喜欢玩雪。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Have you ever played in the snow?",
           "model": "Yes, I have. I made a snowman last winter.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "雪の中で遊んだことがありますか。",
+              "zh": "你玩过雪吗？"
+            },
+            "model": {
+              "ja": "はい、あります。去年の冬、雪だるまを作りました。",
+              "zh": "是的，我玩过。去年冬天我堆了一个雪人。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "冬の楽しみ",
+          "zh": "冬天的乐趣"
+        },
+        "passage": {
+          "ja": "子どもたちは冬に外で遊ぶことを楽しみます。雪があると、友達と雪だるまを作れます。こうした特別な日々を覚えておきたいので、写真を撮る子どもたちもいます。",
+          "zh": "孩子们喜欢冬天在户外玩耍。有雪时，他们可以和朋友一起堆雪人。有些孩子还会拍照，因为他们想记住这些特别的日子。"
+        }
+      }
     },
     {
       "id": "14",
@@ -626,37 +1859,122 @@
           "prompt": "What do friends bring to birthday parties?",
           "model": "They bring cards with kind messages.",
           "alternatives": [],
-          "tip": "注意 bring 是带来，答案从原文提取。"
+          "tip": "注意 bring 是带来，答案从原文提取。",
+          "translation": {
+            "prompt": {
+              "ja": "友達は誕生日会に何を持ってきますか。",
+              "zh": "朋友们会带什么来参加生日聚会？"
+            },
+            "model": {
+              "ja": "温かいメッセージの書かれたカードを持ってきます。",
+              "zh": "他们会带来写着温馨祝福的卡片。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "bringは「持ってくる」です。本文から答えを探しましょう。",
+              "zh": "注意 bring 是带来，答案从原文提取。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy carrying?",
           "model": "He is carrying a cake.",
           "alternatives": [],
-          "tip": "carry 的进行时是 carrying。"
+          "tip": "carry 的进行时是 carrying。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何を運んでいますか。",
+              "zh": "那个男孩正拿着什么东西？"
+            },
+            "model": {
+              "ja": "彼はケーキを運んでいます。",
+              "zh": "他正拿着一个蛋糕。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "carryのing形はcarryingです。",
+              "zh": "carry 的进行时是 carrying。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many candles are on the cake?",
           "model": "There are six candles.",
           "alternatives": [],
-          "tip": "数蛋糕上的六根蜡烛。"
+          "tip": "数蛋糕上的六根蜡烛。",
+          "translation": {
+            "prompt": {
+              "ja": "ケーキの上にろうそくは何本ありますか。",
+              "zh": "蛋糕上有几根蜡烛？"
+            },
+            "model": {
+              "ja": "ろうそくが6本あります。",
+              "zh": "有六根蜡烛。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ケーキの上の6本のろうそくを数えましょう。",
+              "zh": "数蛋糕上的六根蜡烛。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you want for your next birthday?",
           "model": "I want a new book.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "次の誕生日に何がほしいですか。",
+              "zh": "下次生日你想要什么？"
+            },
+            "model": {
+              "ja": "新しい本がほしいです。",
+              "zh": "我想要一本新书。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like making cards?",
           "model": "Yes, I do. I make cards for my friends.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "カードを作るのは好きですか。",
+              "zh": "你喜欢制作卡片吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。友達のためにカードを作ります。",
+              "zh": "是的，我喜欢。我为朋友们制作卡片。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "誕生日会",
+          "zh": "生日聚会"
+        },
+        "passage": {
+          "ja": "家で小さな誕生日会を開く子どもたちもいます。友達を招いて、一緒にケーキを食べます。友達は温かいメッセージの書かれたカードを持ってくるので、誕生日はみんなにとって幸せな思い出になります。",
+          "zh": "有些孩子会在家举办小型生日聚会。他们邀请朋友，一起吃蛋糕。朋友们带来写着温馨祝福的卡片，因此生日能成为每个人的快乐回忆。"
+        }
+      }
     },
     {
       "id": "15",
@@ -670,37 +1988,122 @@
           "prompt": "Why can students enjoy their morning lessons after breakfast?",
           "model": "Because they have more energy.",
           "alternatives": [],
-          "tip": "energy 表示精力，找 so 前面的原因。"
+          "tip": "energy 表示精力，找 so 前面的原因。",
+          "translation": {
+            "prompt": {
+              "ja": "朝ご飯を食べると、生徒たちはなぜ午前中の授業を楽しめるのですか。",
+              "zh": "为什么学生吃完早饭后能享受上午的课程？"
+            },
+            "model": {
+              "ja": "元気が出るからです。",
+              "zh": "因为他们有更多精力。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "energyは「元気、活力」です。soの前にある理由を探しましょう。",
+              "zh": "energy 表示精力，找 so 前面的原因。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl eating?",
           "model": "She is eating bread.",
           "alternatives": [],
-          "tip": "bread 是不可数名词，不加 a。"
+          "tip": "bread 是不可数名词，不加 a。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何を食べていますか。",
+              "zh": "那个女孩正在吃什么？"
+            },
+            "model": {
+              "ja": "彼女はパンを食べています。",
+              "zh": "她正在吃面包。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "breadは数えられない名詞なので、aを付けません。",
+              "zh": "bread 是不可数名词，不加 a。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many cups are on the table?",
           "model": "There are three cups.",
           "alternatives": [],
-          "tip": "只数桌面上的三个杯子。"
+          "tip": "只数桌面上的三个杯子。",
+          "translation": {
+            "prompt": {
+              "ja": "テーブルの上にカップはいくつありますか。",
+              "zh": "桌子上有几个杯子？"
+            },
+            "model": {
+              "ja": "カップが3個あります。",
+              "zh": "有三个杯子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "テーブルの上の3個のカップだけ数えましょう。",
+              "zh": "只数桌面上的三个杯子。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What did you eat for breakfast today?",
           "model": "I ate rice and eggs.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "今日の朝ご飯に何を食べましたか。",
+              "zh": "你今天早饭吃了什么？"
+            },
+            "model": {
+              "ja": "ご飯と卵を食べました。",
+              "zh": "我吃了米饭和鸡蛋。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you eat breakfast every day?",
           "model": "Yes, I do. I usually eat it at seven.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "毎日朝ご飯を食べますか。",
+              "zh": "你每天都吃早饭吗？"
+            },
+            "model": {
+              "ja": "はい、食べます。普段は7時に食べます。",
+              "zh": "是的，我吃。我通常七点吃早饭。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "朝ご飯を食べる",
+          "zh": "吃早饭"
+        },
+        "passage": {
+          "ja": "しっかり朝ご飯を食べることは、生徒たちが一日を始める助けになります。パンや果物、卵を一緒に食べる家族もいます。朝ご飯を食べると元気が出るので、学校の午前中の授業を楽しめます。",
+          "zh": "一顿好的早饭有助于学生们开始新的一天。有些家庭一起吃面包、水果和鸡蛋。学生们吃完早饭后精力更加充沛，因此能享受学校上午的课程。"
+        }
+      }
     },
     {
       "id": "16",
@@ -714,37 +2117,122 @@
           "prompt": "What do families bring to a park for a picnic?",
           "model": "They bring food and drinks.",
           "alternatives": [],
-          "tip": "问题问带什么，用 They bring 回答。"
+          "tip": "问题问带什么，用 They bring 回答。",
+          "translation": {
+            "prompt": {
+              "ja": "家族はピクニックのために公園へ何を持っていきますか。",
+              "zh": "家人们去公园野餐会带什么？"
+            },
+            "model": {
+              "ja": "食べ物と飲み物を持っていきます。",
+              "zh": "他们会带食物和饮料。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "何を持ってくるかを聞いています。They bringで答えましょう。",
+              "zh": "问题问带什么，用 They bring 回答。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy doing?",
           "model": "He is drinking water.",
           "alternatives": [],
-          "tip": "drink water 表示喝水。"
+          "tip": "drink water 表示喝水。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何をしていますか。",
+              "zh": "那个男孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼は水を飲んでいます。",
+              "zh": "他正在喝水。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "drink waterは「水を飲む」という意味です。",
+              "zh": "drink water 表示喝水。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many oranges are on the picnic sheet?",
           "model": "There are five oranges.",
           "alternatives": [],
-          "tip": "数野餐垫上的五个橙子。"
+          "tip": "数野餐垫上的五个橙子。",
+          "translation": {
+            "prompt": {
+              "ja": "レジャーシートの上にオレンジはいくつありますか。",
+              "zh": "野餐垫上有几个橙子？"
+            },
+            "model": {
+              "ja": "オレンジが5個あります。",
+              "zh": "有五个橙子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "レジャーシートの上の5個のオレンジを数えましょう。",
+              "zh": "数野餐垫上的五个橙子。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Where do you like to eat lunch on weekends?",
           "model": "I like to eat lunch at home.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "週末にはどこで昼ご飯を食べるのが好きですか。",
+              "zh": "周末你喜欢在哪里吃午饭？"
+            },
+            "model": {
+              "ja": "家で昼ご飯を食べるのが好きです。",
+              "zh": "我喜欢在家吃午饭。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you enjoy eating outside?",
           "model": "Yes, I do. I like having picnics in spring.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "外で食べるのは好きですか。",
+              "zh": "你喜欢在户外吃东西吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。春にピクニックをするのが好きです。",
+              "zh": "是的，我喜欢。我喜欢春天去野餐。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "ピクニックをする",
+          "zh": "去野餐"
+        },
+        "passage": {
+          "ja": "ピクニックは自然を楽しむ手軽な方法です。家族は食べ物や飲み物を公園へ持っていきます。木の下で食べたり、外で一緒にゆったりとした午後を過ごしたりできます。",
+          "zh": "野餐是享受大自然的一种简单方式。家人们带着食物和饮料去公园。他们可以在树下吃东西，一起在户外度过轻松的下午。"
+        }
+      }
     },
     {
       "id": "17",
@@ -758,37 +2246,122 @@
           "prompt": "Why can students finish cleaning quickly?",
           "model": "Because working together makes cleaning easier.",
           "alternatives": [],
-          "tip": "working together 表示一起工作。"
+          "tip": "working together 表示一起工作。",
+          "translation": {
+            "prompt": {
+              "ja": "生徒たちは、なぜ掃除を早く終えることができますか。",
+              "zh": "学生们为什么能很快打扫完？"
+            },
+            "model": {
+              "ja": "協力すると掃除が楽になるからです。",
+              "zh": "因为一起合作让打扫变得更轻松。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "working togetherは「一緒に取り組むこと」です。",
+              "zh": "working together 表示一起工作。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl doing?",
           "model": "She is sweeping the floor.",
           "alternatives": [],
-          "tip": "sweep the floor 表示扫地。"
+          "tip": "sweep the floor 表示扫地。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女は床を掃いています。",
+              "zh": "她正在扫地。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "sweep the floorは「床を掃く」という意味です。",
+              "zh": "sweep the floor 表示扫地。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many buckets are beside the door?",
           "model": "There are two buckets.",
           "alternatives": [],
-          "tip": "只数门旁的两个水桶。"
+          "tip": "只数门旁的两个水桶。",
+          "translation": {
+            "prompt": {
+              "ja": "ドアのそばにバケツはいくつありますか。",
+              "zh": "门旁边有几个水桶？"
+            },
+            "model": {
+              "ja": "バケツが2個あります。",
+              "zh": "有两个水桶。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ドアのそばの2個のバケツだけ数えましょう。",
+              "zh": "只数门旁的两个水桶。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "How often do you clean your room?",
           "model": "I clean my room once a week.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どれくらいの頻度で自分の部屋を掃除しますか。",
+              "zh": "你多久打扫一次自己的房间？"
+            },
+            "model": {
+              "ja": "週に1回、自分の部屋を掃除します。",
+              "zh": "我每周打扫一次自己的房间。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you think keeping your school clean is important?",
           "model": "Yes, I do. A clean classroom is comfortable.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "学校をきれいに保つことは大切だと思いますか。",
+              "zh": "你认为保持学校干净很重要吗？"
+            },
+            "model": {
+              "ja": "はい、思います。きれいな教室は居心地がよいです。",
+              "zh": "是的，我认为很重要。干净的教室让人觉得舒服。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "学校を掃除する",
+          "zh": "打扫学校"
+        },
+        "passage": {
+          "ja": "多くの学校では生徒たちが一緒に教室を掃除します。昼ご飯の後に床を掃いたり、机を拭いたりします。協力すると掃除が楽になるので、早く終えることができます。",
+          "zh": "很多学校的学生们一起打扫教室。他们午饭后扫地、擦桌子。一起合作让打扫变得更轻松，所以他们能很快完成。"
+        }
+      }
     },
     {
       "id": "18",
@@ -802,37 +2375,122 @@
           "prompt": "Why do some children draw flowers in their gardens?",
           "model": "Because they like looking closely at nature.",
           "alternatives": [],
-          "tip": "用 because 后的原因回答。"
+          "tip": "用 because 后的原因回答。",
+          "translation": {
+            "prompt": {
+              "ja": "庭の花を描く子どもたちがいるのはなぜですか。",
+              "zh": "为什么有些孩子会画花园里的花？"
+            },
+            "model": {
+              "ja": "自然をよく観察するのが好きだからです。",
+              "zh": "因为他们喜欢仔细观察大自然。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "becauseの後ろの理由を使って答えましょう。",
+              "zh": "用 because 后的原因回答。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl doing?",
           "model": "She is drawing a picture.",
           "alternatives": [],
-          "tip": "draw a picture 表示画画。"
+          "tip": "draw a picture 表示画画。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女は絵を描いています。",
+              "zh": "她正在画画。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "draw a pictureは「絵を描く」という意味です。",
+              "zh": "draw a picture 表示画画。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many flowers are in the vase?",
           "model": "There are four flowers.",
           "alternatives": [],
-          "tip": "只数花瓶里的四朵花，不数画纸上的花。"
+          "tip": "只数花瓶里的四朵花，不数画纸上的花。",
+          "translation": {
+            "prompt": {
+              "ja": "花瓶の中に花は何本ありますか。",
+              "zh": "花瓶里有几朵花？"
+            },
+            "model": {
+              "ja": "花が4本あります。",
+              "zh": "有四朵花。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "花瓶の4本の花だけ数えます。紙に描かれた花は含めません。",
+              "zh": "只数花瓶里的四朵花，不数画纸上的花。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you like to draw?",
           "model": "I like to draw animals.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "何を描くのが好きですか。",
+              "zh": "你喜欢画什么？"
+            },
+            "model": {
+              "ja": "動物を描くのが好きです。",
+              "zh": "我喜欢画动物。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you enjoy visiting art museums?",
           "model": "Yes, I do. I like looking at paintings.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "美術館に行くのは好きですか。",
+              "zh": "你喜欢参观美术馆吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。絵画を見るのが好きです。",
+              "zh": "是的，我喜欢。我喜欢欣赏绘画。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "絵を描く楽しみ",
+          "zh": "绘画的乐趣"
+        },
+        "passage": {
+          "ja": "絵を描くことは、多くの子どもたちが楽しむ趣味です。さまざまな色を使って自分の考えを表現できます。自然をよく観察するのが好きなので、庭の花を描く子どもたちもいます。",
+          "zh": "画画是很多孩子喜欢的爱好。他们可以用不同颜色表达自己的想法。有些孩子会画花园里的花，因为他们喜欢仔细观察大自然。"
+        }
+      }
     },
     {
       "id": "19",
@@ -846,37 +2504,122 @@
           "prompt": "How can children learn to think about the needs of others?",
           "model": "By helping their families look after pets.",
           "alternatives": [],
-          "tip": "How 问方法，可用 By 加动词 ing 回答。"
+          "tip": "How 问方法，可用 By 加动词 ing 回答。",
+          "translation": {
+            "prompt": {
+              "ja": "子どもたちは、どうすれば他の人が必要とすることを考えられるようになりますか。",
+              "zh": "孩子们怎样才能学会考虑别人的需要？"
+            },
+            "model": {
+              "ja": "家族のペットの世話を手伝うことで学べます。",
+              "zh": "通过帮家人照顾宠物来学习。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "Howは方法をたずねています。「By + 動詞のing形」で答えられます。",
+              "zh": "How 问方法，可用 By 加动词 ing 回答。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy doing?",
           "model": "He is feeding a dog.",
           "alternatives": [],
-          "tip": "feed 表示喂食。"
+          "tip": "feed 表示喂食。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何をしていますか。",
+              "zh": "那个男孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼は犬にえさをあげています。",
+              "zh": "他正在喂狗。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "feedは「えさをあげる」という意味です。",
+              "zh": "feed 表示喂食。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many bowls are on the ground?",
           "model": "There are three bowls.",
           "alternatives": [],
-          "tip": "只数地上的三个碗。"
+          "tip": "只数地上的三个碗。",
+          "translation": {
+            "prompt": {
+              "ja": "地面におわんはいくつありますか。",
+              "zh": "地上有几个碗？"
+            },
+            "model": {
+              "ja": "おわんが3個あります。",
+              "zh": "有三个碗。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "地面にある3個のおわんだけ数えましょう。",
+              "zh": "只数地上的三个碗。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What pet would you like to have?",
           "model": "I would like to have a cat.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どんなペットを飼いたいですか。",
+              "zh": "你想养什么宠物？"
+            },
+            "model": {
+              "ja": "猫を飼いたいです。",
+              "zh": "我想养一只猫。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like walking dogs?",
           "model": "Yes, I do. I sometimes walk my dog after school.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "犬の散歩をするのは好きですか。",
+              "zh": "你喜欢遛狗吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。放課後に時々自分の犬を散歩させます。",
+              "zh": "是的，我喜欢。我有时放学后遛自己的狗。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "ペットの世話",
+          "zh": "照顾宠物"
+        },
+        "passage": {
+          "ja": "ペットには毎日食べ物や水、運動が必要です。子どもたちは家族がペットの世話をするのを手伝えます。こうした仕事をすることで、他の人が必要とすることを考えられるようになります。",
+          "zh": "宠物每天都需要食物、水和运动。孩子们可以帮家人照顾宠物。通过做这些事，孩子们可以学会考虑别人的需要。"
+        }
+      }
     },
     {
       "id": "20",
@@ -890,37 +2633,122 @@
           "prompt": "Why are trains useful in busy cities?",
           "model": "Because they can carry many people at once.",
           "alternatives": [],
-          "tip": "at once 表示一次、同时。"
+          "tip": "at once 表示一次、同时。",
+          "translation": {
+            "prompt": {
+              "ja": "忙しい都市で電車が便利なのはなぜですか。",
+              "zh": "电车为什么在繁忙的城市里很有用？"
+            },
+            "model": {
+              "ja": "一度に多くの人を運べるからです。",
+              "zh": "因为它们能一次运送很多人。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "at onceは「一度に、同時に」という意味です。",
+              "zh": "at once 表示一次、同时。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl carrying?",
           "model": "She is carrying a suitcase.",
           "alternatives": [],
-          "tip": "suitcase 表示行李箱。"
+          "tip": "suitcase 表示行李箱。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何を運んでいますか。",
+              "zh": "那个女孩正拿着什么东西？"
+            },
+            "model": {
+              "ja": "彼女はスーツケースを運んでいます。",
+              "zh": "她正拿着一个行李箱。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "suitcaseは「スーツケース」です。",
+              "zh": "suitcase 表示行李箱。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many bags are on the bench?",
           "model": "There are two bags.",
           "alternatives": [],
-          "tip": "只数长椅上的两个包，不数女孩的行李箱。"
+          "tip": "只数长椅上的两个包，不数女孩的行李箱。",
+          "translation": {
+            "prompt": {
+              "ja": "ベンチの上にかばんはいくつありますか。",
+              "zh": "长椅上有几个包？"
+            },
+            "model": {
+              "ja": "かばんが2つあります。",
+              "zh": "有两个包。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ベンチの上のかばん2つだけ数えます。女の子のスーツケースは含めません。",
+              "zh": "只数长椅上的两个包，不数女孩的行李箱。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Where would you like to travel?",
           "model": "I would like to travel to Kyoto.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "どこへ旅行に行きたいですか。",
+              "zh": "你想去哪里旅行？"
+            },
+            "model": {
+              "ja": "京都へ旅行に行きたいです。",
+              "zh": "我想去京都旅行。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like travelling by train?",
           "model": "Yes, I do. I enjoy looking out of the window.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "電車で旅行するのは好きですか。",
+              "zh": "你喜欢坐电车旅行吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。窓の外を見るのが好きです。",
+              "zh": "是的，我喜欢。我喜欢看窗外的景色。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "電車で旅行する",
+          "zh": "坐电车旅行"
+        },
+        "passage": {
+          "ja": "電車は人々がさまざまな場所へ行くのを助けてくれます。乗客は移動中に本を読んだり、景色を楽しんだりできます。一度に多くの人を運べるので、電車は忙しい都市で役立ちます。",
+          "zh": "电车帮助人们前往许多地方。乘客在旅途中可以读书或欣赏风景。电车一次能运送很多人，所以它在繁忙的城市里很有用。"
+        }
+      }
     },
     {
       "id": "21",
@@ -934,37 +2762,122 @@
           "prompt": "What do teachers show children at a swimming pool?",
           "model": "They show them how to move safely in the water.",
           "alternatives": [],
-          "tip": "注意 show them how to 的结构。"
+          "tip": "注意 show them how to 的结构。",
+          "translation": {
+            "prompt": {
+              "ja": "プールで先生たちは子どもたちに何を教えますか。",
+              "zh": "老师在游泳池里教孩子们什么？"
+            },
+            "model": {
+              "ja": "水の中で安全に動く方法を教えます。",
+              "zh": "他们教孩子们怎样在水中安全地活动。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "show them how toという形に注目しましょう。",
+              "zh": "注意 show them how to 的结构。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy doing?",
           "model": "He is swimming.",
           "alternatives": [],
-          "tip": "swim 的进行时双写 m，swimming。"
+          "tip": "swim 的进行时双写 m，swimming。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何をしていますか。",
+              "zh": "那个男孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼は泳いでいます。",
+              "zh": "他正在游泳。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "swimのing形はmを重ねてswimmingと書きます。",
+              "zh": "swim 的进行时双写 m，swimming。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many swimming rings are on the wall?",
           "model": "There are four swimming rings.",
           "alternatives": [],
-          "tip": "只数墙上挂着的四个游泳圈。"
+          "tip": "只数墙上挂着的四个游泳圈。",
+          "translation": {
+            "prompt": {
+              "ja": "壁に浮き輪はいくつありますか。",
+              "zh": "墙上有几个游泳圈？"
+            },
+            "model": {
+              "ja": "浮き輪が4つあります。",
+              "zh": "有四个游泳圈。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "壁に掛けられた4つの浮き輪だけ数えましょう。",
+              "zh": "只数墙上挂着的四个游泳圈。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you like to do on hot days?",
           "model": "I like to swim at the pool.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "暑い日には何をするのが好きですか。",
+              "zh": "天气热时你喜欢做什么？"
+            },
+            "model": {
+              "ja": "プールで泳ぐのが好きです。",
+              "zh": "我喜欢在游泳池里游泳。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Can you swim?",
           "model": "Yes, I can. I learned to swim at school.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "泳げますか。",
+              "zh": "你会游泳吗？"
+            },
+            "model": {
+              "ja": "はい、泳げます。学校で泳ぎ方を習いました。",
+              "zh": "是的，我会。我在学校学会了游泳。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "水泳のレッスン",
+          "zh": "游泳课"
+        },
+        "passage": {
+          "ja": "多くの子どもたちは近くのプールで水泳を習います。先生たちは水の中で安全に動く方法を教えます。定期的に練習すると、子どもたちは上手に泳げるようになり、自信もつきます。",
+          "zh": "很多孩子在附近的游泳池上游泳课。老师教他们怎样在水中安全地活动。通过经常练习，孩子们能游得更好，也会更有自信。"
+        }
+      }
     },
     {
       "id": "22",
@@ -978,37 +2891,122 @@
           "prompt": "Why do families sort paper, cans, and bottles carefully?",
           "model": "Because less rubbish needs to be thrown away.",
           "alternatives": [],
-          "tip": "less rubbish 是更少的垃圾，原因用 Because 回答。"
+          "tip": "less rubbish 是更少的垃圾，原因用 Because 回答。",
+          "translation": {
+            "prompt": {
+              "ja": "家族は、なぜ紙、缶、びんを丁寧に分別するのですか。",
+              "zh": "家人们为什么认真地把纸、罐子和瓶子分类？"
+            },
+            "model": {
+              "ja": "捨てる必要のあるごみが少なくなるからです。",
+              "zh": "因为这样需要扔掉的垃圾就会更少。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "less rubbishは「より少ないごみ」です。Becauseで理由を答えましょう。",
+              "zh": "less rubbish 是更少的垃圾，原因用 Because 回答。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl going to do?",
           "model": "She is going to put a bottle into the box.",
           "alternatives": [],
-          "tip": "瓶子正在箱口上方，用 be going to 表示接下来要做的动作。"
+          "tip": "瓶子正在箱口上方，用 be going to 表示接下来要做的动作。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子はこれから何をするところですか。",
+              "zh": "那个女孩接下来打算做什么？"
+            },
+            "model": {
+              "ja": "彼女はこれからボトルを箱に入れるところです。",
+              "zh": "她接下来打算把一个瓶子放进箱子里。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "ボトルは箱の口の上にあります。be going toで、次にする動作を表しましょう。",
+              "zh": "瓶子正在箱口上方，用 be going to 表示接下来要做的动作。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many boxes are on the floor?",
           "model": "There are three boxes.",
           "alternatives": [],
-          "tip": "数地上的三个箱子。"
+          "tip": "数地上的三个箱子。",
+          "translation": {
+            "prompt": {
+              "ja": "床の上に箱はいくつありますか。",
+              "zh": "地板上有几个箱子？"
+            },
+            "model": {
+              "ja": "箱が3つあります。",
+              "zh": "有三个箱子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "床の上にある3つの箱を数えましょう。",
+              "zh": "数地上的三个箱子。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What do you do to help the environment?",
           "model": "I bring my own bag when I go shopping.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "環境のために何をしていますか。",
+              "zh": "你做什么来保护环境？"
+            },
+            "model": {
+              "ja": "買い物に行くときは自分のバッグを持っていきます。",
+              "zh": "我去购物时会带上自己的袋子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you recycle at home?",
           "model": "Yes, I do. I put bottles in a special box.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "家でリサイクルをしていますか。",
+              "zh": "你在家会回收物品吗？"
+            },
+            "model": {
+              "ja": "はい、しています。ボトルを専用の箱に入れます。",
+              "zh": "是的，我会。我把瓶子放进专用的箱子。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "家でリサイクル",
+          "zh": "在家回收物品"
+        },
+        "passage": {
+          "ja": "リサイクルは物を再び使うことに役立ちます。多くの家族は紙、缶、びんを別々の箱に入れます。丁寧に分別することで、捨てる必要のあるごみが少なくなります。",
+          "zh": "回收利用帮助我们再次使用物品。很多家庭把纸、罐子和瓶子放进不同箱子。他们认真地分类，让需要扔掉的垃圾变得更少。"
+        }
+      }
     },
     {
       "id": "23",
@@ -1022,37 +3020,122 @@
           "prompt": "Why do some letters feel special to the reader?",
           "model": "Because people can choose pretty paper and draw pictures.",
           "alternatives": [],
-          "tip": "用 so 前面的两项活动回答原因。"
+          "tip": "用 so 前面的两项活动回答原因。",
+          "translation": {
+            "prompt": {
+              "ja": "手紙が読み手にとって特別に感じられることがあるのはなぜですか。",
+              "zh": "为什么有些信会让读信的人觉得特别？"
+            },
+            "model": {
+              "ja": "書く人がきれいな紙を選んだり、絵を描いたりできるからです。",
+              "zh": "因为写信的人可以挑选漂亮的纸，并画上图画。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "soの前にある2つの活動を使って理由を答えましょう。",
+              "zh": "用 so 前面的两项活动回答原因。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the boy doing?",
           "model": "He is writing a letter.",
           "alternatives": [],
-          "tip": "write 去掉 e 再加 ing。"
+          "tip": "write 去掉 e 再加 ing。",
+          "translation": {
+            "prompt": {
+              "ja": "男の子は何をしていますか。",
+              "zh": "那个男孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼は手紙を書いています。",
+              "zh": "他正在写信。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "writeは最後のeを取ってingを付け、writingになります。",
+              "zh": "write 去掉 e 再加 ing。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many envelopes are on the table?",
           "model": "There are two envelopes.",
           "alternatives": [],
-          "tip": "只数桌面的两个信封，不数正在写的信纸。"
+          "tip": "只数桌面的两个信封，不数正在写的信纸。",
+          "translation": {
+            "prompt": {
+              "ja": "テーブルの上に封筒は何枚ありますか。",
+              "zh": "桌子上有几个信封？"
+            },
+            "model": {
+              "ja": "封筒が2枚あります。",
+              "zh": "有两个信封。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "テーブルの上の封筒2枚だけ数えます。書いている便せんは含めません。",
+              "zh": "只数桌面的两个信封，不数正在写的信纸。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Who do you often send messages to?",
           "model": "I often send messages to my friends.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "誰によくメッセージを送りますか。",
+              "zh": "你经常给谁发消息？"
+            },
+            "model": {
+              "ja": "よく友達にメッセージを送ります。",
+              "zh": "我经常给朋友们发消息。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Have you ever written a letter in English?",
           "model": "Yes, I have. I wrote one to my teacher.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "英語で手紙を書いたことがありますか。",
+              "zh": "你用英语写过信吗？"
+            },
+            "model": {
+              "ja": "はい、あります。先生に書いたことがあります。",
+              "zh": "是的，我写过。我给老师写过一封。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "手紙を書く",
+          "zh": "写信"
+        },
+        "passage": {
+          "ja": "人々は携帯電話ですぐにメッセージを送れます。しかし、今でも手紙を書くことを楽しむ人がいます。きれいな紙を選んだり、絵を描いたりできるので、手紙は読み手にとって特別に感じられます。",
+          "zh": "人们可以用手机快速发送消息。不过，有些人仍然喜欢写信。他们可以挑选漂亮的纸，并画上图画，因此这些信会让读信的人觉得特别。"
+        }
+      }
     },
     {
       "id": "24",
@@ -1066,37 +3149,122 @@
           "prompt": "Why do many families enjoy walking, running, or jumping rope?",
           "model": "Because these activities help them stay healthy.",
           "alternatives": [],
-          "tip": "stay healthy 表示保持健康。"
+          "tip": "stay healthy 表示保持健康。",
+          "translation": {
+            "prompt": {
+              "ja": "多くの家族が散歩やランニング、縄跳びを楽しむのはなぜですか。",
+              "zh": "为什么很多家庭喜欢散步、跑步或跳绳？"
+            },
+            "model": {
+              "ja": "これらの活動が健康を保つのに役立つからです。",
+              "zh": "因为这些活动能帮助他们保持健康。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "stay healthyは「健康を保つ」という意味です。",
+              "zh": "stay healthy 表示保持健康。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "What is the girl doing?",
           "model": "She is jumping rope.",
           "alternatives": [],
-          "tip": "jump rope 表示跳绳。"
+          "tip": "jump rope 表示跳绳。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子は何をしていますか。",
+              "zh": "那个女孩正在做什么？"
+            },
+            "model": {
+              "ja": "彼女は縄跳びをしています。",
+              "zh": "她正在跳绳。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "jump ropeは「縄跳びをする」という意味です。",
+              "zh": "jump rope 表示跳绳。"
+            }
+          }
         },
         {
           "kind": "picture",
           "prompt": "How many trees are behind the girl?",
           "model": "There are three trees.",
           "alternatives": [],
-          "tip": "数女孩身后的三棵树。"
+          "tip": "数女孩身后的三棵树。",
+          "translation": {
+            "prompt": {
+              "ja": "女の子の後ろに木は何本ありますか。",
+              "zh": "那个女孩身后有几棵树？"
+            },
+            "model": {
+              "ja": "木が3本あります。",
+              "zh": "有三棵树。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "女の子の後ろにある3本の木を数えましょう。",
+              "zh": "数女孩身后的三棵树。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "What exercise do you do after school?",
           "model": "I often walk with my friends.",
           "alternatives": [],
-          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。",
+          "translation": {
+            "prompt": {
+              "ja": "放課後にはどんな運動をしますか。",
+              "zh": "你放学后做什么运动？"
+            },
+            "model": {
+              "ja": "よく友達と歩きます。",
+              "zh": "我经常和朋友们一起散步。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "自分のことに置き換え、まず短い文で答えましょう。",
+              "zh": "可以替换成自己的真实情况，先用完整短句回答。"
+            }
+          }
         },
         {
           "kind": "personal",
           "prompt": "Do you like exercising in the morning?",
           "model": "Yes, I do. It helps me wake up.",
           "alternatives": [],
-          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。",
+          "translation": {
+            "prompt": {
+              "ja": "朝に運動するのは好きですか。",
+              "zh": "你喜欢早上锻炼吗？"
+            },
+            "model": {
+              "ja": "はい、好きです。目が覚めるので役に立ちます。",
+              "zh": "是的，我喜欢。这能让我清醒起来。"
+            },
+            "alternatives": [],
+            "tip": {
+              "ja": "まずYesかNoで答え、経験や理由を1文付け足しましょう。例は自分に合わせて変えられます。",
+              "zh": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+            }
+          }
         }
-      ]
+      ],
+      "translation": {
+        "topic": {
+          "ja": "毎日の運動",
+          "zh": "每天锻炼"
+        },
+        "passage": {
+          "ja": "毎日少し運動することは体によいことです。家の近くで歩いたり、走ったり、縄跳びをしたりできます。これらの活動は健康を保つのに役立つので、多くの家族は一緒に楽しんでいます。",
+          "zh": "每天做一点运动对我们有益。人们可以在家附近散步、跑步或跳绳。这些活动有助于保持健康，所以很多家庭喜欢一起做。"
+        }
+      }
     }
   ]
 }

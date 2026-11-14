@@ -31,3 +31,24 @@ test('every interview has its editable scene and all eleven web audio files',()=
   }
   assert.equal(readdirSync(audio).filter(name=>name.includes('.part.')).length,0);
 });
+
+test('passages, questions, answers and alternatives have Japanese and Chinese translations',()=>{
+  const personal=JSON.parse(readFileSync(new URL('../../data/personal_questions.json',import.meta.url)));
+  const translated=[];
+  for(const set of sets){
+    translated.push(set.translation.topic,set.translation.passage);
+    for(const question of set.questions){
+      translated.push(question.translation.prompt,question.translation.model,question.translation.tip);
+      assert.equal(question.translation.alternatives.length,question.alternatives.length);
+      translated.push(...question.translation.alternatives);
+    }
+  }
+  for(const question of personal) translated.push(question.translation.q,question.translation.a);
+  for(const text of translated){
+    for(const language of ['ja','zh']){
+      assert.equal(typeof text?.[language],'string',`missing ${language}`);
+      assert.ok(text[language].trim().length>0);
+      assert.match(text[language],/[\u3040-\u30ff\u3400-\u9fff]/);
+    }
+  }
+});

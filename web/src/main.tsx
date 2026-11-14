@@ -5,6 +5,7 @@ import personal from '../../data/personal_questions.json';
 import {saveSession, toggleReview} from './progress.mjs';
 import { ArrowClockwise, ArrowLeft, ArrowRight, BookmarkSimple, BookOpen, Headphones, Pause, Play } from '@phosphor-icons/react';
 import '@fontsource-variable/atkinson-hyperlegible-next';
+import { Translation, type BilingualText, type TranslationLanguage } from './Translation';
 import './style.css';
 
 type Rating = 'good' | 'almost' | 'again';
@@ -24,6 +25,7 @@ function App(){
  const [audioError,setAudioError]=useState('');
  const [activeFile,setActiveFile]=useState('');
  const [isPlaying,setIsPlaying]=useState(false);
+ const [translationLanguage,setTranslationLanguage]=useState<TranslationLanguage>('ja');
  const [saved,setSaved]=useState(false); const audio=useRef<HTMLAudioElement|null>(null);
  const exam=exams.sets.find(x=>x.id===setId)!;
  useEffect(()=>{try {localStorage.setItem(key,JSON.stringify(progress));} catch { /* private mode or storage full */ }},[progress]);
@@ -98,6 +100,23 @@ function App(){
    {marked ? '復習リストに追加済み' : 'あとで復習する'}
   </button>;
  };
+ const translation = (
+  value: BilingualText,
+  id: string,
+  label: string,
+  alternatives?: BilingualText[],
+  title?: BilingualText,
+  tip?: BilingualText,
+ ) => <Translation
+  key={id}
+  value={value}
+  title={title}
+  tip={tip}
+  alternatives={alternatives}
+  label={label}
+  language={translationLanguage}
+  onLanguageChange={setTranslationLanguage}
+ />;
  const ratingButtons=(fn:(r:Rating)=>void)=><div className="actions">{(['good','almost','again'] as Rating[]).map(r=><button key={r} className="secondary" onClick={()=>fn(r)}>{labels[r]}</button>)}</div>;
  return <><header><div className="wrap head"><button className="brand" onClick={()=>{stopAudio();setPage('home')}}><BookOpen size={26} weight="bold" aria-hidden="true" /><span className="brand-name">EIKEN 3 <span>面接れんしゅう</span></span></button><button className="nav" onClick={()=>{stopAudio();setPage('progress')}}>学習きろく</button></div></header><main className="wrap">
  {page === 'home' && <>
@@ -136,11 +155,11 @@ function App(){
   </section>
  </>}
  {page==='session'&&<><div className="breadcrumbs"><button onClick={()=>{stopAudio();setPage('home')}}><ArrowLeft size={18} aria-hidden="true" />セット選択</button><span>セット {Number(setId)}</span></div><div className="session-head"><div><h1>{exam.topic}</h1></div><span className="step">{step===5?'ふり返り':`質問 ${step+1} / 5`}</span></div>
- <div className="training-layout"><section className="card material"><div className="passage"><h2 className="material-title">英文を読もう</h2><p>{exam.passage}</p>{audioControls(`${setId}_reading_model.mp3`, '英文')}</div><img src={`${import.meta.env.BASE_URL}scenes/${scenes[setId]}`} alt="面接カードのイラスト" width="960" height="420"/></section>
- {step>=0&&step<5&&<section className="panel"><h2>質問 {step+1}</h2>{<><p className="english">{exam.questions[step].prompt}</p></>}{audioControls(`${setId}_q${step+1}.mp3`, '質問')}<p className="note">聞き終わったら、自分のペースで答えて次へ進もう。</p>{<><div className="answer"><h3 className="answer-title">答えの例</h3><strong>{exam.questions[step].model}</strong>{audioControls(`${setId}_answer${step+1}.mp3`, '答え')}<p className="tip"><span>ヒント</span>{exam.questions[step].tip}</p><small>ほかの例: {exam.questions[step].alternatives.join(' / ')}</small></div>{reviewButton(`mock:${setId}:${step}`)}</>}<div className="actions divider"><button className="secondary" disabled={step===0} onClick={()=>move(step-1)}><ArrowLeft size={18} aria-hidden="true" />前の質問</button><button onClick={()=>move(step+1)}>{step===4?'終了してふり返る':'次の質問へ'}<ArrowRight size={18} aria-hidden="true" /></button></div></section>}
- {step===5&&<section className="panel"><h2>おつかれさま！ 答えをふり返ろう</h2><p>答えは一例です。自分のことは、ほんとうのことを話して大丈夫。</p>{exam.questions.map((q,i)=><div className="review" key={i}><span className="number">QUESTION {i+1}</span><p className="english">{q.prompt}</p><strong>{q.model}</strong><p className="note">{q.tip}</p><div className="actions">{audioControls(`${setId}_q${i+1}.mp3`, '質問')}{audioControls(`${setId}_answer${i+1}.mp3`, '答え')}{reviewButton(`mock:${setId}:${i}`)}</div></div>)}<h3>今日の自分はどうだった？</h3>{saved?<p>学習きろくに保存しました。</p>:ratingButtons(r=>{setProgress(p=>saveSession(p,setId,r) as Progress);setSaved(true)})}<div className="actions"><button className="secondary" onClick={()=>move(4)}><ArrowLeft size={18} aria-hidden="true" />前の質問</button><button onClick={()=>{stopAudio();setPage('home')}}>セット選択へ</button></div></section>}
+ <div className="training-layout"><section className="card material"><div className="passage"><h2 className="material-title">英文を読もう</h2><p>{exam.passage}</p>{translation(exam.translation.passage, `${setId}:passage`, '英文', undefined, exam.translation.topic)}{audioControls(`${setId}_reading_model.mp3`, '英文')}</div><img src={`${import.meta.env.BASE_URL}scenes/${scenes[setId]}`} alt="面接カードのイラスト" width="960" height="420"/></section>
+ {step>=0&&step<5&&<section className="panel"><h2>質問 {step+1}</h2>{<><p className="english">{exam.questions[step].prompt}</p>{translation(exam.questions[step].translation.prompt, `${setId}:${step}:question`, '質問')}</>}{audioControls(`${setId}_q${step+1}.mp3`, '質問')}<p className="note">聞き終わったら、自分のペースで答えて次へ進もう。</p>{<><div className="answer"><h3 className="answer-title">答えの例</h3><strong>{exam.questions[step].model}</strong>{translation(exam.questions[step].translation.model, `${setId}:${step}:answer`, '答え', exam.questions[step].translation.alternatives, undefined, exam.questions[step].translation.tip)}{audioControls(`${setId}_answer${step+1}.mp3`, '答え')}{exam.questions[step].alternatives.length > 0 && <small>ほかの例: {exam.questions[step].alternatives.join(' / ')}</small>}</div>{reviewButton(`mock:${setId}:${step}`)}</>}<div className="actions divider"><button className="secondary" disabled={step===0} onClick={()=>move(step-1)}><ArrowLeft size={18} aria-hidden="true" />前の質問</button><button onClick={()=>move(step+1)}>{step===4?'終了してふり返る':'次の質問へ'}<ArrowRight size={18} aria-hidden="true" /></button></div></section>}
+ {step===5&&<section className="panel"><h2>おつかれさま！ 答えをふり返ろう</h2><p>答えは一例です。自分のことは、ほんとうのことを話して大丈夫。</p>{exam.questions.map((q,i)=><div className="review" key={i}><span className="number">QUESTION {i+1}</span><p className="english">{q.prompt}</p>{translation(q.translation.prompt, `${setId}:${i}:review-question`, '質問')}<strong>{q.model}</strong>{translation(q.translation.model, `${setId}:${i}:review-answer`, '答え', q.translation.alternatives, undefined, q.translation.tip)}<div className="actions">{audioControls(`${setId}_q${i+1}.mp3`, '質問')}{audioControls(`${setId}_answer${i+1}.mp3`, '答え')}{reviewButton(`mock:${setId}:${i}`)}</div></div>)}<h3>今日の自分はどうだった？</h3>{saved?<p>学習きろくに保存しました。</p>:ratingButtons(r=>{setProgress(p=>saveSession(p,setId,r) as Progress);setSaved(true)})}<div className="actions"><button className="secondary" onClick={()=>move(4)}><ArrowLeft size={18} aria-hidden="true" />前の質問</button><button onClick={()=>{stopAudio();setPage('home')}}>セット選択へ</button></div></section>}
  </div></>}
- {page==='personal'&&<><div className="breadcrumbs"><button onClick={()=>{stopAudio();setPage('home')}}><ArrowLeft size={18} aria-hidden="true" />ホーム</button><span>個人質問</span></div><section className="panel"><p className="eyebrow">EXTRA / {personalIndex+1} OF {personal.length}</p><h1>自分のことを話そう</h1><p className="english">{personal[personalIndex].q}</p>{audioControls(`personal_${String(personalIndex+1).padStart(2,'0')}.mp3`, '質問')}<div className="actions"><button className="secondary" onClick={random}>次の問題をひく</button></div><div className="answer"><h3 className="answer-title">答えの例</h3><strong>{personal[personalIndex].a}</strong>{audioControls(`personal_answer_${String(personalIndex+1).padStart(2,'0')}.mp3`, '答え')}<p>自分のことに合わせて答えよう。</p></div>{reviewButton(`personal:${personalIndex}`)}<h3>自分で評価しよう</h3>{ratingButtons(r=>setProgress(p=>saveSession(p,`personal:${personalIndex}`,r) as Progress))}</section></>}
+ {page==='personal'&&<><div className="breadcrumbs"><button onClick={()=>{stopAudio();setPage('home')}}><ArrowLeft size={18} aria-hidden="true" />ホーム</button><span>個人質問</span></div><section className="panel"><p className="eyebrow">EXTRA / {personalIndex+1} OF {personal.length}</p><h1>自分のことを話そう</h1><p className="english">{personal[personalIndex].q}</p>{translation(personal[personalIndex].translation.q, `personal:${personalIndex}:question`, '質問')}{audioControls(`personal_${String(personalIndex+1).padStart(2,'0')}.mp3`, '質問')}<div className="actions"><button className="secondary" onClick={random}>次の問題をひく</button></div><div className="answer"><h3 className="answer-title">答えの例</h3><strong>{personal[personalIndex].a}</strong>{translation(personal[personalIndex].translation.a, `personal:${personalIndex}:answer`, '答え')}{audioControls(`personal_answer_${String(personalIndex+1).padStart(2,'0')}.mp3`, '答え')}<p>自分のことに合わせて答えよう。</p></div>{reviewButton(`personal:${personalIndex}`)}<h3>自分で評価しよう</h3>{ratingButtons(r=>setProgress(p=>saveSession(p,`personal:${personalIndex}`,r) as Progress))}</section></>}
  {page==='progress'&&<><div className="breadcrumbs"><button onClick={()=>setPage('home')}><ArrowLeft size={18} aria-hidden="true" />ホーム</button></div><section className="panel"><h1>学習きろく</h1><h2>復習リスト <span className="note">{progress.review.length}問</span></h2>{progress.review.length===0?<p>まだありません。</p>:progress.review.map(id=>{const [kind,a,b]=id.split(':');const q=kind==='mock'?exams.sets.find(s=>s.id===a)?.questions[Number(b)]?.prompt:personal[Number(a)]?.q;return <div className="review" key={id}><p className="english">{q || '問題が見つかりません'}</p><button className="secondary" onClick={()=>{if(kind==='mock'){start(a);setStep(Number(b))}else{setPersonalIndex(Number(a));setPage('personal')}}}>この問題を練習</button> {reviewButton(id)}</div>})}<h2>練習のきろく</h2>{progress.sessions.length===0?<p>まだありません。</p>:<ul className="history">{[...progress.sessions].reverse().map((s,i)=><li key={i}><span>{s.setId.startsWith('personal:')?`個人質問 ${Number(s.setId.split(':')[1])+1}`:`セット ${s.setId}`}</span><span>{labels[s.rating]} · {new Date(s.date).toLocaleString('ja-JP')}</span></li>)}</ul>}</section></>}
  {page!=='home'&&<div className="speed"><label>音声スピード <select value={rate} onChange={e=>{const v=Number(e.target.value);setRate(v);if(audio.current)audio.current.playbackRate=v}}><option value="1">1x</option><option value="0.75">0.75x</option></select></label>{audioError&&<span role="alert">{audioError}</span>}</div>}
  </main><footer className="wrap">英検3級 面接れんしゅう · オリジナル教材・非公式</footer></>;

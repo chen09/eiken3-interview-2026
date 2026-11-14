@@ -208,3 +208,44 @@ footer.wrap { padding: 24px 0 30px; margin-top: 24px; border-top: 1px solid var(
 }
 .set-groups{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.set-groups button{min-height:44px;padding:9px 18px}.set-groups [aria-current=page]{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
 .official-materials{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 24px;margin-bottom:30px;background:var(--soft);border-radius:14px}.official-materials h2{font-size:18px;margin:0 0 6px}.official-materials p{font-size:13px;color:var(--muted);margin:0;line-height:1.7}.official-links{display:flex;flex-direction:column;gap:10px;flex-shrink:0}.official-links a{color:var(--accent);font-size:14px;font-weight:700;text-underline-offset:4px;min-height:28px;display:flex;align-items:center}.official-links a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}@media(max-width:767px){.official-materials{align-items:start;flex-direction:column;gap:14px;padding:20px}.official-links{flex-shrink:1}}
+.translation {
+  margin: 5px 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.translation > summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  min-height: 40px;
+  padding: 6px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+  touch-action: manipulation;
+}
+.translation > summary::-webkit-details-marker { display: none; }
+.translation > summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.translation > summary:hover { color: var(--accent); }
+.translation-hint { font-size: 11px; margin-left: 3px; }
+.translation[open] > summary { color: var(--accent); }
+.translation[open] .translation-caret { transform: rotate(180deg); }
+.translation-body { padding: 12px 15px; margin: 0 0 8px; border: 1px solid var(--border); border-radius: 10px; background: var(--soft); }
+.translation-switch { display: flex; gap: 4px; margin-bottom: 8px; }
+.translation-switch button { min-height: 38px; padding: 7px 12px; background: transparent; color: var(--muted); font-size: 12px; font-weight: 600; border-radius: 7px; }
+.translation-switch button[aria-pressed=true] { background: var(--surface); border-color: var(--border); color: var(--accent); }
+.translation-copy { color: var(--text); font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.translation .translation-copy p { margin: 0; font: inherit; color: inherit; letter-spacing: normal; }
+.translation .translation-copy > strong { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; line-height: 1.7; color: var(--text); }
+.translation-alternatives { padding-top: 10px; margin-top: 10px; border-top: 1px solid var(--border); }
+.translation-alternatives > span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+.translation-alternatives p + p { margin-top: 4px; }
+.answer .translation-body { background: var(--surface); }
+.answer .translation-switch button[aria-pressed=true] { background: var(--soft); }
+.translation + .audio-controls { margin-top: 8px; }
+.translation-tip{padding-top:10px;margin-top:10px;border-top:1px solid var(--border)}.translation-tip>span{display:block;color:var(--muted);font-size:12px;font-weight:600;margin-bottom:4px}

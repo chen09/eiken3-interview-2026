@@ -1,22 +1,282 @@
 [
-  {"q":"What subject do you like best?","a":"I like science best because it is interesting."},
-  {"q":"What do you usually eat for breakfast?","a":"I usually eat bread and eggs."},
-  {"q":"How do you go to school?","a":"I go to school by train."},
-  {"q":"What do you do after school?","a":"I often play games and do my homework."},
-  {"q":"Do you like English?","a":"Yes, I do. I like listening to English songs."},
-  {"q":"What did you do last Sunday?","a":"I played soccer with my friends."},
-  {"q":"What do you want to do this weekend?","a":"I want to visit a park with my family."},
-  {"q":"What is your favorite food?","a":"My favorite food is curry rice."},
-  {"q":"Do you like watching movies?","a":"Yes, I do. I watch movies with my family."},
-  {"q":"What kind of books do you like?","a":"I like adventure stories."},
-  {"q":"What season do you like best?","a":"I like spring best because the weather is nice."},
-  {"q":"Do you have a pet?","a":"No, I don't, but I like dogs."},
-  {"q":"What do you usually do on rainy days?","a":"I usually read books at home."},
-  {"q":"Can you cook?","a":"Yes, I can. I can make fried eggs."},
-  {"q":"Where do you want to go on vacation?","a":"I want to go to Hokkaido."},
-  {"q":"Do you enjoy playing sports?","a":"Yes, I do. I like basketball."},
-  {"q":"What time do you usually get up?","a":"I usually get up at seven."},
-  {"q":"Do you use a computer at home?","a":"Yes, I do. I use it for studying."},
-  {"q":"What do you want to be in the future?","a":"I want to be an engineer."},
-  {"q":"Do you often help your parents?","a":"Yes, I do. I sometimes wash the dishes."}
+  {
+    "q": "What subject do you like best?",
+    "a": "I like science best because it is interesting.",
+    "translation": {
+      "q": {
+        "ja": "どの教科が一番好きですか。",
+        "zh": "你最喜欢什么科目？"
+      },
+      "a": {
+        "ja": "面白いので理科が一番好きです。",
+        "zh": "我最喜欢科学，因为它很有趣。"
+      }
+    }
+  },
+  {
+    "q": "What do you usually eat for breakfast?",
+    "a": "I usually eat bread and eggs.",
+    "translation": {
+      "q": {
+        "ja": "朝ご飯には普段何を食べますか。",
+        "zh": "你通常早饭吃什么？"
+      },
+      "a": {
+        "ja": "普段はパンと卵を食べます。",
+        "zh": "我通常吃面包和鸡蛋。"
+      }
+    }
+  },
+  {
+    "q": "How do you go to school?",
+    "a": "I go to school by train.",
+    "translation": {
+      "q": {
+        "ja": "どうやって学校に行きますか。",
+        "zh": "你怎样去学校？"
+      },
+      "a": {
+        "ja": "電車で学校に行きます。",
+        "zh": "我坐电车去学校。"
+      }
+    }
+  },
+  {
+    "q": "What do you do after school?",
+    "a": "I often play games and do my homework.",
+    "translation": {
+      "q": {
+        "ja": "放課後には何をしますか。",
+        "zh": "你放学后做什么？"
+      },
+      "a": {
+        "ja": "よくゲームをしたり、宿題をしたりします。",
+        "zh": "我经常玩游戏和做作业。"
+      }
+    }
+  },
+  {
+    "q": "Do you like English?",
+    "a": "Yes, I do. I like listening to English songs.",
+    "translation": {
+      "q": {
+        "ja": "英語は好きですか。",
+        "zh": "你喜欢英语吗？"
+      },
+      "a": {
+        "ja": "はい、好きです。英語の歌を聞くのが好きです。",
+        "zh": "是的，我喜欢。我喜欢听英文歌。"
+      }
+    }
+  },
+  {
+    "q": "What did you do last Sunday?",
+    "a": "I played soccer with my friends.",
+    "translation": {
+      "q": {
+        "ja": "先週の日曜日は何をしましたか。",
+        "zh": "你上个星期日做了什么？"
+      },
+      "a": {
+        "ja": "友達とサッカーをしました。",
+        "zh": "我和朋友们踢了足球。"
+      }
+    }
+  },
+  {
+    "q": "What do you want to do this weekend?",
+    "a": "I want to visit a park with my family.",
+    "translation": {
+      "q": {
+        "ja": "今週末は何をしたいですか。",
+        "zh": "你这个周末想做什么？"
+      },
+      "a": {
+        "ja": "家族と公園に行きたいです。",
+        "zh": "我想和家人一起去公园。"
+      }
+    }
+  },
+  {
+    "q": "What is your favorite food?",
+    "a": "My favorite food is curry rice.",
+    "translation": {
+      "q": {
+        "ja": "好きな食べ物は何ですか。",
+        "zh": "你最喜欢的食物是什么？"
+      },
+      "a": {
+        "ja": "好きな食べ物はカレーライスです。",
+        "zh": "我最喜欢的食物是咖喱饭。"
+      }
+    }
+  },
+  {
+    "q": "Do you like watching movies?",
+    "a": "Yes, I do. I watch movies with my family.",
+    "translation": {
+      "q": {
+        "ja": "映画を見るのは好きですか。",
+        "zh": "你喜欢看电影吗？"
+      },
+      "a": {
+        "ja": "はい、好きです。家族と映画を見ます。",
+        "zh": "是的，我喜欢。我和家人一起看电影。"
+      }
+    }
+  },
+  {
+    "q": "What kind of books do you like?",
+    "a": "I like adventure stories.",
+    "translation": {
+      "q": {
+        "ja": "どんな種類の本が好きですか。",
+        "zh": "你喜欢哪种类型的书？"
+      },
+      "a": {
+        "ja": "冒険の物語が好きです。",
+        "zh": "我喜欢冒险故事。"
+      }
+    }
+  },
+  {
+    "q": "What season do you like best?",
+    "a": "I like spring best because the weather is nice.",
+    "translation": {
+      "q": {
+        "ja": "どの季節が一番好きですか。",
+        "zh": "你最喜欢哪个季节？"
+      },
+      "a": {
+        "ja": "天気がよいので春が一番好きです。",
+        "zh": "我最喜欢春天，因为天气很好。"
+      }
+    }
+  },
+  {
+    "q": "Do you have a pet?",
+    "a": "No, I don't, but I like dogs.",
+    "translation": {
+      "q": {
+        "ja": "ペットを飼っていますか。",
+        "zh": "你养宠物吗？"
+      },
+      "a": {
+        "ja": "いいえ、飼っていませんが、犬は好きです。",
+        "zh": "不，我没有养，但我喜欢狗。"
+      }
+    }
+  },
+  {
+    "q": "What do you usually do on rainy days?",
+    "a": "I usually read books at home.",
+    "translation": {
+      "q": {
+        "ja": "雨の日には普段何をしますか。",
+        "zh": "下雨天你通常做什么？"
+      },
+      "a": {
+        "ja": "普段は家で本を読みます。",
+        "zh": "我通常在家读书。"
+      }
+    }
+  },
+  {
+    "q": "Can you cook?",
+    "a": "Yes, I can. I can make fried eggs.",
+    "translation": {
+      "q": {
+        "ja": "料理はできますか。",
+        "zh": "你会做饭吗？"
+      },
+      "a": {
+        "ja": "はい、できます。目玉焼きを作れます。",
+        "zh": "是的，我会。我会做煎蛋。"
+      }
+    }
+  },
+  {
+    "q": "Where do you want to go on vacation?",
+    "a": "I want to go to Hokkaido.",
+    "translation": {
+      "q": {
+        "ja": "休暇にはどこへ行きたいですか。",
+        "zh": "假期你想去哪里？"
+      },
+      "a": {
+        "ja": "北海道に行きたいです。",
+        "zh": "我想去北海道。"
+      }
+    }
+  },
+  {
+    "q": "Do you enjoy playing sports?",
+    "a": "Yes, I do. I like basketball.",
+    "translation": {
+      "q": {
+        "ja": "スポーツをするのは好きですか。",
+        "zh": "你喜欢运动吗？"
+      },
+      "a": {
+        "ja": "はい、好きです。バスケットボールが好きです。",
+        "zh": "是的，我喜欢。我喜欢篮球。"
+      }
+    }
+  },
+  {
+    "q": "What time do you usually get up?",
+    "a": "I usually get up at seven.",
+    "translation": {
+      "q": {
+        "ja": "普段は何時に起きますか。",
+        "zh": "你通常几点起床？"
+      },
+      "a": {
+        "ja": "普段は7時に起きます。",
+        "zh": "我通常七点起床。"
+      }
+    }
+  },
+  {
+    "q": "Do you use a computer at home?",
+    "a": "Yes, I do. I use it for studying.",
+    "translation": {
+      "q": {
+        "ja": "家でコンピューターを使いますか。",
+        "zh": "你在家使用电脑吗？"
+      },
+      "a": {
+        "ja": "はい、使います。勉強に使います。",
+        "zh": "是的，我使用。我用它来学习。"
+      }
+    }
+  },
+  {
+    "q": "What do you want to be in the future?",
+    "a": "I want to be an engineer.",
+    "translation": {
+      "q": {
+        "ja": "将来何になりたいですか。",
+        "zh": "你将来想做什么工作？"
+      },
+      "a": {
+        "ja": "エンジニアになりたいです。",
+        "zh": "我想当工程师。"
+      }
+    }
+  },
+  {
+    "q": "Do you often help your parents?",
+    "a": "Yes, I do. I sometimes wash the dishes.",
+    "translation": {
+      "q": {
+        "ja": "よく親の手伝いをしますか。",
+        "zh": "你经常帮父母做事吗？"
+      },
+      "a": {
+        "ja": "はい、します。時々食器を洗います。",
+        "zh": "是的，我会。我有时洗餐具。"
+      }
+    }
+  }
 ]
