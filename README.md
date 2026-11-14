@@ -77,7 +77,7 @@ MAC_TTS_VOICE=Samantha python scripts/generate_audio.py
 
 ## 后续工程方向
 
-适合让Codex在此基础上继续做：本地网页答题器、随机抽题、计时器、Web Speech录音、自测计分、错题复习、更多题卡、导出到Anki。
+适合让Codex在此基础上继续做：本地网页答题器、随机抽题、计时器、自测计分、错题复习、更多题卡、导出到Anki。
 
 建议Codex指令：`请阅读 AGENTS.md 和 data/mock_exams.json，为这个项目增加一个离线运行的单页英语面试练习器，保留现有PDF及MP3。`
 
@@ -87,7 +87,7 @@ MAC_TTS_VOICE=Samantha python scripts/generate_audio.py
 
 ## 网页版
 
-在线使用：<https://eiken3-interview-2026.pages.dev/>。网页及其题目和答案是公开的；自评、进度和录音不会上传。
+在线使用：<https://eiken3-interview-2026.pages.dev/>。网页及其题目和答案是公开的；自评和进度保存在浏览器中。
 
 ### 在 Mac 上启动
 
@@ -99,9 +99,9 @@ npm install
 npm run dev
 ```
 
-在 Mac 浏览器打开终端显示的 `http://localhost:5173/`。选择「練習モード」或「模擬試験」；每题点击播放，答完后手动进入下一题（适合不同答题速度，也避免 iPad 限制自动播放）。进度和自评保存在当前浏览器的 localStorage，清除浏览器数据会删除记录；录音只在当前页面内临时保留，刷新后消失。点击录音时才会请求麦克风权限。
+在 Mac 浏览器打开终端显示的 `http://localhost:5173/`。选择「練習モード」或「模擬試験」；每题点击播放，答完后手动进入下一题（适合不同答题速度，也避免 iPad 限制自动播放）。进度和自评保存在当前浏览器的 localStorage，清除浏览器数据会删除记录；所有模式均显示英文问题与参考答案，可分别播放语音。
 
-如需在 iPad 上访问 Mac 的本地服务，可用同一局域网中的 Mac 地址和终端显示的端口；普通 HTTP 局域网地址通常不能使用麦克风，录音需要 HTTPS（或该设备自己的 localhost）。公开的 HTTPS 站点可在 iPad 浏览器允许麦克风后使用录音，具体取决于浏览器支持情况。进度不在不同设备间同步。
+如需在 iPad 上访问 Mac 的本地服务，可用同一局域网中的 Mac 地址和终端显示的端口。进度保存在访问设备的浏览器中，不在不同设备间同步。
 
 ```bash
 npm test       # 进度逻辑测试
