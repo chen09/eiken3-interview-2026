@@ -1,0 +1,51 @@
+{
+  "title": "EIKEN Grade 3 - Last-Minute Interview Practice",
+  "edition": "2026-11-14",
+  "disclaimer": "Original practice materials for private study. Not official EIKEN examination questions.",
+  "sets": [
+    {
+      "id": "01", "topic": "Libraries After School",
+      "passage": "Many students visit libraries after school. They read books, do homework, and find information for classes. Some libraries have quiet rooms where students can study with their friends.",
+      "questions": [
+        {"kind": "passage", "prompt": "What can students do at libraries?", "model": "They can read books and do homework.", "alternatives": ["They can read books.", "They can find information for classes."], "tip": "根据短文找动作，不需要复述整段。"},
+        {"kind": "picture", "prompt": "What is the girl doing?", "model": "She is reading a book.", "alternatives": ["She is reading."], "tip": "现在进行时：She is + -ing。"},
+        {"kind": "picture", "prompt": "How many books are on the table?", "model": "There are three books.", "alternatives": ["Three books."], "tip": "只数桌上右侧书堆，不包含女孩手里正在看的书。"},
+        {"kind": "personal", "prompt": "What do you like to do after school?", "model": "I like to play soccer with my friends.", "alternatives": ["I like playing video games.", "I like reading books."], "tip": "替换成孩子真实的兴趣更好。"},
+        {"kind": "personal", "prompt": "Do you enjoy reading books?", "model": "Yes, I do. I like adventure stories.", "alternatives": ["No, I don't. I like watching movies."], "tip": "先 Yes/No，再补一句即可。"}
+      ]
+    },
+    {
+      "id": "02", "topic": "A Day at the Park",
+      "passage": "Many families go to parks on weekends. Children can play games, ride bicycles, and enjoy fresh air. Some families have lunch together under the trees and stay there all afternoon.",
+      "questions": [
+        {"kind": "passage", "prompt": "What can children do at parks?", "model": "They can play games and ride bicycles.", "alternatives": ["They can play games.", "They can ride bicycles."], "tip": "回答一个原文中的活动就够。"},
+        {"kind": "picture", "prompt": "What is the boy doing?", "model": "He is flying a kite.", "alternatives": ["He is playing with a kite."], "tip": "fly a kite：放风筝。"},
+        {"kind": "picture", "prompt": "How many dogs are near the bench?", "model": "There are two dogs.", "alternatives": ["Two dogs."], "tip": "数长椅附近的狗。"},
+        {"kind": "personal", "prompt": "What do you usually do on Sundays?", "model": "I usually play soccer with my friends.", "alternatives": ["I usually study at home.", "I usually visit my grandparents."], "tip": "usually + 动词原形。"},
+        {"kind": "personal", "prompt": "Do you like going to parks?", "model": "Yes, I do. I like playing outside.", "alternatives": ["No, I don't. I prefer staying at home."], "tip": "说出自己的真实情况即可。"}
+      ]
+    },
+    {
+      "id": "03", "topic": "Cooking at Home",
+      "passage": "Cooking with family is a fun way to learn new things. Children can learn how to make simple food and help others. Families often enjoy eating the meals they make together.",
+      "questions": [
+        {"kind": "passage", "prompt": "What can children learn from cooking with their families?", "model": "They can learn how to make simple food.", "alternatives": ["They can learn how to cook."], "tip": "原文关键语句：learn how to make simple food。"},
+        {"kind": "picture", "prompt": "What is the boy going to do?", "model": "He is going to wash the dishes.", "alternatives": ["He is going to wash a plate."], "tip": "男孩正拿盘子走向水槽。be going to + 动词。"},
+        {"kind": "picture", "prompt": "Where is the cat?", "model": "It is under the table.", "alternatives": ["Under the table."], "tip": "under：在……下面。"},
+        {"kind": "personal", "prompt": "What food do you like?", "model": "I like curry rice because it is delicious.", "alternatives": ["I like pizza.", "I like sushi."], "tip": "不要求复杂原因，清楚回答即可。"},
+        {"kind": "personal", "prompt": "Do you help your family at home?", "model": "Yes, I do. I wash the dishes sometimes.", "alternatives": ["Yes, I do. I clean my room.", "No, I don't, but I want to help more."], "tip": "自然回答，别背特别长的句子。"}
+      ]
+    },
+    {
+      "id": "04", "topic": "School Sports Clubs",
+      "passage": "Many schools have sports clubs for students. Playing sports is good for their health and helps them make friends. Students practice after school and sometimes play games with other schools.",
+      "questions": [
+        {"kind": "passage", "prompt": "Why is playing sports good for students?", "model": "Because it is good for their health.", "alternatives": ["Because they can make friends."], "tip": "Why 开头，建议用 Because 回答。"},
+        {"kind": "picture", "prompt": "What is the girl doing?", "model": "She is playing tennis.", "alternatives": ["She is practicing tennis."], "tip": "She is + -ing。"},
+        {"kind": "picture", "prompt": "How many tennis balls are on the ground?", "model": "There are three tennis balls.", "alternatives": ["Three balls."], "tip": "图中场地上有三个球。"},
+        {"kind": "personal", "prompt": "What sport do you like best?", "model": "I like basketball best.", "alternatives": ["I like soccer best.", "I like tennis best."], "tip": "best = 最喜欢。"},
+        {"kind": "personal", "prompt": "Do you want to join a sports club?", "model": "Yes, I do. I want to play basketball.", "alternatives": ["No, I don't. I want to join the music club."], "tip": "不必勉强说喜欢运动，可讲真实兴趣。"}
+      ]
+    }
+  ]
+}
