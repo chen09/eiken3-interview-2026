@@ -87,7 +87,7 @@ MAC_TTS_VOICE=Samantha python scripts/generate_audio.py
 
 ## 网页版
 
-在线使用：<https://chen09.github.io/eiken3-interview-2026/>。网页及其题目和答案是公开的；自评、进度和录音不会上传。
+在线使用：<https://eiken3-interview-2026.pages.dev/>。网页及其题目和答案是公开的；自评、进度和录音不会上传。
 
 ### 在 Mac 上启动
 
@@ -108,4 +108,4 @@ npm test       # 进度逻辑测试
 npm run build  # 静态网页输出到 web/dist/
 ```
 
-网页题目直接读取 `data/` 中的 JSON；网页图片和音频是原素材的副本。更新题库或原始 MP3 后，需要重新核对图文音频一致性，再运行 `python3 web/prepare_audio.py` 更新网页音频（需要 ffmpeg 和 espeak，或 macOS say），并重新构建。修改原 SVG 后也需将对应文件复制到 `web/public/scenes/`。原有 PDF 和音频重建命令保持不变。
+网页题目直接读取 `data/` 中的 JSON。练习模式直接显示英文短文、问题、参考答案，各自提供音频播放按钮。网页使用 `web/public/audio-neural/` 中的微软 Jenny 英语语音。参考答案音频可通过安装 edge-tts 7.3.1 后运行 `python3 web/generate_answer_audio.py` 生成，生成时需要网络，播放已生成的文件可离线进行。`web/prepare_audio.py` 用于旧版离线合成音频。题库修改后需要核对并更新对应音频，再重新构建。修改原 SVG 后也需将对应文件复制到 `web/public/scenes/`。原有 PDF 和音频重建命令保持不变。
