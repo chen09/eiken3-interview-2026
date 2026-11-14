@@ -87,6 +87,18 @@ MAC_TTS_VOICE=Samantha python scripts/generate_audio.py
 
 ## 网页版
 
+网页现有 **24套原创模拟面试，共120道问题**，另有20道个人问答。第01–04套保留原内容，第05–24套为追加内容，短文为28–32词。每套均有文章理解1题、图片2题、个人问答2题，以及配图、文字答案、中文提示和微软英语语音。首页按每6套分组。
+
+首页另设英检协会官方样题 PDF 和官方面试示范入口。已核对官方题型与难度；官方样题明确禁止擅自转载，页面直接打开原站材料。新增题为本项目原创，不标记为真题。研究参考在2026-11-15核对。
+
+- [英检协会3级试验说明](https://www.eiken.or.jp/eiken/exam/grade_3/solutions.html)
+- [英检协会二次面试样题与答案](https://www.eiken.or.jp/eiken/exam/virtual/grade_3/pdf/grade_3.pdf)
+- [英检协会使用条款](https://www.eiken.or.jp/sitepolicy/)
+- [Eigox 公开模拟题示例](https://eigox.jp/textbook/Eiken2ji/student/TestCard_Eiken3_L3.pdf)
+- [スクールコンパス的8套练习](https://eleschool-compass.com/english/englishstudy/eiken3-mensetsu.html)
+
+原有 `print/` PDF 与 `audio/` 连续模拟录音仍为最初4套。`scripts/draw_scenes.py` 可重建全部24张SVG；`scripts/generate_materials.py` 已支持扩展题库，执行时会重建打印文件。本次扩充更新网页素材，未重写原有PDF与连续录音。
+
 在线使用：<https://eiken3-interview-2026.pages.dev/>。网页及其题目和答案是公开的；自评和进度保存在浏览器中。
 
 ### 在 Mac 上启动
@@ -108,4 +120,4 @@ npm test       # 进度逻辑测试
 npm run build  # 静态网页输出到 web/dist/
 ```
 
-网页题目直接读取 `data/` 中的 JSON。训练页面直接显示英文短文、问题、参考答案，各自提供音频播放按钮。网页使用 `web/public/audio-neural/` 中的微软 Jenny 英语语音。参考答案音频可通过安装 edge-tts 7.3.1 后运行 `python3 web/generate_answer_audio.py` 生成，生成时需要网络，播放已生成的文件可离线进行。`web/prepare_audio.py` 用于旧版离线合成音频。题库修改后需要核对并更新对应音频，再重新构建。修改原 SVG 后也需将对应文件复制到 `web/public/scenes/`。原有 PDF 和音频重建命令保持不变。
+网页题目直接读取 `data/` 中的 JSON。训练页面直接显示英文短文、问题、参考答案，各自提供音频播放按钮。网页使用 `web/public/audio-neural/` 中的微软 Jenny 英语语音。课文、问题和参考答案音频可通过安装 edge-tts 7.3.1 后运行 `python3 web/generate_answer_audio.py` 生成，生成时需要网络，播放已生成的文件可离线进行。默认保留已有音频，题目修改后使用 `--set 05 --overwrite` 更新指定套题。`web/prepare_audio.py` 用于旧版离线合成音频。题库修改后需要核对并更新对应音频，再重新构建。修改原 SVG 后也需将对应文件复制到 `web/public/scenes/`。原有 PDF 和音频重建命令保持不变。

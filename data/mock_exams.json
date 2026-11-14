@@ -1,50 +1,1101 @@
 {
   "title": "EIKEN Grade 3 - Last-Minute Interview Practice",
-  "edition": "2026-11-14",
+  "edition": "2026-11-15",
   "disclaimer": "Original practice materials for private study. Not official EIKEN examination questions.",
   "sets": [
     {
-      "id": "01", "topic": "Libraries After School",
+      "id": "01",
+      "topic": "Libraries After School",
       "passage": "Many students visit libraries after school. They read books, do homework, and find information for classes. Some libraries have quiet rooms where students can study with their friends.",
       "questions": [
-        {"kind": "passage", "prompt": "What can students do at libraries?", "model": "They can read books and do homework.", "alternatives": ["They can read books.", "They can find information for classes."], "tip": "根据短文找动作，不需要复述整段。"},
-        {"kind": "picture", "prompt": "What is the girl doing?", "model": "She is reading a book.", "alternatives": ["She is reading."], "tip": "现在进行时：She is + -ing。"},
-        {"kind": "picture", "prompt": "How many books are on the table?", "model": "There are three books.", "alternatives": ["Three books."], "tip": "只数桌上右侧书堆，不包含女孩手里正在看的书。"},
-        {"kind": "personal", "prompt": "What do you like to do after school?", "model": "I like to play soccer with my friends.", "alternatives": ["I like playing video games.", "I like reading books."], "tip": "替换成孩子真实的兴趣更好。"},
-        {"kind": "personal", "prompt": "Do you enjoy reading books?", "model": "Yes, I do. I like adventure stories.", "alternatives": ["No, I don't. I like watching movies."], "tip": "先 Yes/No，再补一句即可。"}
+        {
+          "kind": "passage",
+          "prompt": "What can students do at libraries?",
+          "model": "They can read books and do homework.",
+          "alternatives": [
+            "They can read books.",
+            "They can find information for classes."
+          ],
+          "tip": "根据短文找动作，不需要复述整段。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is reading a book.",
+          "alternatives": [
+            "She is reading."
+          ],
+          "tip": "现在进行时：She is + -ing。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many books are on the table?",
+          "model": "There are three books.",
+          "alternatives": [
+            "Three books."
+          ],
+          "tip": "只数桌上右侧书堆，不包含女孩手里正在看的书。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you like to do after school?",
+          "model": "I like to play soccer with my friends.",
+          "alternatives": [
+            "I like playing video games.",
+            "I like reading books."
+          ],
+          "tip": "替换成孩子真实的兴趣更好。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you enjoy reading books?",
+          "model": "Yes, I do. I like adventure stories.",
+          "alternatives": [
+            "No, I don't. I like watching movies."
+          ],
+          "tip": "先 Yes/No，再补一句即可。"
+        }
       ]
     },
     {
-      "id": "02", "topic": "A Day at the Park",
+      "id": "02",
+      "topic": "A Day at the Park",
       "passage": "Many families go to parks on weekends. Children can play games, ride bicycles, and enjoy fresh air. Some families have lunch together under the trees and stay there all afternoon.",
       "questions": [
-        {"kind": "passage", "prompt": "What can children do at parks?", "model": "They can play games and ride bicycles.", "alternatives": ["They can play games.", "They can ride bicycles."], "tip": "回答一个原文中的活动就够。"},
-        {"kind": "picture", "prompt": "What is the boy doing?", "model": "He is flying a kite.", "alternatives": ["He is playing with a kite."], "tip": "fly a kite：放风筝。"},
-        {"kind": "picture", "prompt": "How many dogs are near the bench?", "model": "There are two dogs.", "alternatives": ["Two dogs."], "tip": "数长椅附近的狗。"},
-        {"kind": "personal", "prompt": "What do you usually do on Sundays?", "model": "I usually play soccer with my friends.", "alternatives": ["I usually study at home.", "I usually visit my grandparents."], "tip": "usually + 动词原形。"},
-        {"kind": "personal", "prompt": "Do you like going to parks?", "model": "Yes, I do. I like playing outside.", "alternatives": ["No, I don't. I prefer staying at home."], "tip": "说出自己的真实情况即可。"}
+        {
+          "kind": "passage",
+          "prompt": "What can children do at parks?",
+          "model": "They can play games and ride bicycles.",
+          "alternatives": [
+            "They can play games.",
+            "They can ride bicycles."
+          ],
+          "tip": "回答一个原文中的活动就够。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy doing?",
+          "model": "He is flying a kite.",
+          "alternatives": [
+            "He is playing with a kite."
+          ],
+          "tip": "fly a kite：放风筝。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many dogs are near the bench?",
+          "model": "There are two dogs.",
+          "alternatives": [
+            "Two dogs."
+          ],
+          "tip": "数长椅附近的狗。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you usually do on Sundays?",
+          "model": "I usually play soccer with my friends.",
+          "alternatives": [
+            "I usually study at home.",
+            "I usually visit my grandparents."
+          ],
+          "tip": "usually + 动词原形。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like going to parks?",
+          "model": "Yes, I do. I like playing outside.",
+          "alternatives": [
+            "No, I don't. I prefer staying at home."
+          ],
+          "tip": "说出自己的真实情况即可。"
+        }
       ]
     },
     {
-      "id": "03", "topic": "Cooking at Home",
+      "id": "03",
+      "topic": "Cooking at Home",
       "passage": "Cooking with family is a fun way to learn new things. Children can learn how to make simple food and help others. Families often enjoy eating the meals they make together.",
       "questions": [
-        {"kind": "passage", "prompt": "What can children learn from cooking with their families?", "model": "They can learn how to make simple food.", "alternatives": ["They can learn how to cook."], "tip": "原文关键语句：learn how to make simple food。"},
-        {"kind": "picture", "prompt": "What is the boy going to do?", "model": "He is going to wash the dishes.", "alternatives": ["He is going to wash a plate."], "tip": "男孩正拿盘子走向水槽。be going to + 动词。"},
-        {"kind": "picture", "prompt": "Where is the cat?", "model": "It is under the table.", "alternatives": ["Under the table."], "tip": "under：在……下面。"},
-        {"kind": "personal", "prompt": "What food do you like?", "model": "I like curry rice because it is delicious.", "alternatives": ["I like pizza.", "I like sushi."], "tip": "不要求复杂原因，清楚回答即可。"},
-        {"kind": "personal", "prompt": "Do you help your family at home?", "model": "Yes, I do. I wash the dishes sometimes.", "alternatives": ["Yes, I do. I clean my room.", "No, I don't, but I want to help more."], "tip": "自然回答，别背特别长的句子。"}
+        {
+          "kind": "passage",
+          "prompt": "What can children learn from cooking with their families?",
+          "model": "They can learn how to make simple food.",
+          "alternatives": [
+            "They can learn how to cook."
+          ],
+          "tip": "原文关键语句：learn how to make simple food。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy going to do?",
+          "model": "He is going to wash the dishes.",
+          "alternatives": [
+            "He is going to wash a plate."
+          ],
+          "tip": "男孩正拿盘子走向水槽。be going to + 动词。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "Where is the cat?",
+          "model": "It is under the table.",
+          "alternatives": [
+            "Under the table."
+          ],
+          "tip": "under：在……下面。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What food do you like?",
+          "model": "I like curry rice because it is delicious.",
+          "alternatives": [
+            "I like pizza.",
+            "I like sushi."
+          ],
+          "tip": "不要求复杂原因，清楚回答即可。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you help your family at home?",
+          "model": "Yes, I do. I wash the dishes sometimes.",
+          "alternatives": [
+            "Yes, I do. I clean my room.",
+            "No, I don't, but I want to help more."
+          ],
+          "tip": "自然回答，别背特别长的句子。"
+        }
       ]
     },
     {
-      "id": "04", "topic": "School Sports Clubs",
+      "id": "04",
+      "topic": "School Sports Clubs",
       "passage": "Many schools have sports clubs for students. Playing sports is good for their health and helps them make friends. Students practice after school and sometimes play games with other schools.",
       "questions": [
-        {"kind": "passage", "prompt": "Why is playing sports good for students?", "model": "Because it is good for their health.", "alternatives": ["Because they can make friends."], "tip": "Why 开头，建议用 Because 回答。"},
-        {"kind": "picture", "prompt": "What is the girl doing?", "model": "She is playing tennis.", "alternatives": ["She is practicing tennis."], "tip": "She is + -ing。"},
-        {"kind": "picture", "prompt": "How many tennis balls are on the ground?", "model": "There are three tennis balls.", "alternatives": ["Three balls."], "tip": "图中场地上有三个球。"},
-        {"kind": "personal", "prompt": "What sport do you like best?", "model": "I like basketball best.", "alternatives": ["I like soccer best.", "I like tennis best."], "tip": "best = 最喜欢。"},
-        {"kind": "personal", "prompt": "Do you want to join a sports club?", "model": "Yes, I do. I want to play basketball.", "alternatives": ["No, I don't. I want to join the music club."], "tip": "不必勉强说喜欢运动，可讲真实兴趣。"}
+        {
+          "kind": "passage",
+          "prompt": "Why is playing sports good for students?",
+          "model": "Because it is good for their health.",
+          "alternatives": [
+            "Because they can make friends."
+          ],
+          "tip": "Why 开头，建议用 Because 回答。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is playing tennis.",
+          "alternatives": [
+            "She is practicing tennis."
+          ],
+          "tip": "She is + -ing。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many tennis balls are on the ground?",
+          "model": "There are three tennis balls.",
+          "alternatives": [
+            "Three balls."
+          ],
+          "tip": "图中场地上有三个球。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What sport do you like best?",
+          "model": "I like basketball best.",
+          "alternatives": [
+            "I like soccer best.",
+            "I like tennis best."
+          ],
+          "tip": "best = 最喜欢。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you want to join a sports club?",
+          "model": "Yes, I do. I want to play basketball.",
+          "alternatives": [
+            "No, I don't. I want to join the music club."
+          ],
+          "tip": "不必勉强说喜欢运动，可讲真实兴趣。"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "topic": "School Gardens",
+      "passage": "Some schools have small gardens. Students grow vegetables and flowers there. They water the plants every morning, so they can learn how to take care of living things.",
+      "scene": "scene_05_watering.svg",
+      "scene_type": "watering",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do students water the plants every morning?",
+          "model": "Because they can learn how to take care of living things.",
+          "alternatives": [],
+          "tip": "Why 问原因，用 Because 回答，答案在 so 后面。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is watering the flowers.",
+          "alternatives": [],
+          "tip": "water 在这里是动词，意思是浇水。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many flowerpots are on the ground?",
+          "model": "There are three flowerpots.",
+          "alternatives": [],
+          "tip": "只数地上的三个花盆。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What vegetables do you like?",
+          "model": "I like tomatoes because they are sweet.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like growing plants?",
+          "model": "Yes, I do. I grow flowers at home.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "topic": "Riding Bicycles",
+      "passage": "Many people ride bicycles in their towns. Riding a bicycle is good exercise. People can also enjoy the scenery, so they often ride along rivers on sunny days.",
+      "scene": "scene_06_bicycle.svg",
+      "scene_type": "bicycle",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do people often ride along rivers on sunny days?",
+          "model": "Because they can enjoy the scenery.",
+          "alternatives": [],
+          "tip": "scenery 是风景，原因在 so 前面。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy doing?",
+          "model": "He is riding a bicycle.",
+          "alternatives": [],
+          "tip": "ride a bicycle 表示骑自行车。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many birds are in the tree?",
+          "model": "There are two birds.",
+          "alternatives": [],
+          "tip": "数树枝上的两只鸟。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "How do you usually go to school?",
+          "model": "I usually walk to school.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you have a bicycle?",
+          "model": "Yes, I do. I ride it on weekends.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "topic": "Making Music",
+      "passage": "Many students enjoy making music together. They play instruments after their classes. Music helps them relax, so some students practice in the music room when they have free time.",
+      "scene": "scene_07_piano.svg",
+      "scene_type": "piano",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do some students practice in the music room?",
+          "model": "Because music helps them relax.",
+          "alternatives": [],
+          "tip": "relax 表示放松，原因句用 Because 开头。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is playing the piano.",
+          "alternatives": [],
+          "tip": "乐器前一般加 the。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many chairs are near the piano?",
+          "model": "There are three chairs.",
+          "alternatives": [],
+          "tip": "只数钢琴旁边的三把空椅子。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What kind of music do you like?",
+          "model": "I like pop music.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Can you play a musical instrument?",
+          "model": "Yes, I can. I can play the guitar.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "topic": "Local Shops",
+      "passage": "Small shops are important in many towns. People can buy fresh food near their homes. Shop owners often talk with customers, so shopping there can be a friendly experience.",
+      "scene": "scene_08_shopping.svg",
+      "scene_type": "shopping",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What can people buy near their homes?",
+          "model": "They can buy fresh food.",
+          "alternatives": [],
+          "tip": "用 They can 加上短文中的动作。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy holding?",
+          "model": "He is holding a shopping bag.",
+          "alternatives": [],
+          "tip": "hold 表示拿着，注意 is holding。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many apples are on the table?",
+          "model": "There are four apples.",
+          "alternatives": [],
+          "tip": "只数桌面上分开的四个苹果。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you usually buy at convenience stores?",
+          "model": "I usually buy bread and milk.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like shopping with your family?",
+          "model": "Yes, I do. We often buy food together.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "topic": "Visiting Zoos",
+      "passage": "Zoos are popular places for families. Visitors can see many animals and learn about their lives. Some zoos have special talks, so children can ask questions about animals.",
+      "scene": "scene_09_photo.svg",
+      "scene_type": "photo",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What can visitors learn about at zoos?",
+          "model": "They can learn about animals and their lives.",
+          "alternatives": [],
+          "tip": "their lives 指动物们的生活。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the woman holding?",
+          "model": "She is holding a camera.",
+          "alternatives": [],
+          "tip": "camera 表示照相机，is holding 表示正拿着。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many rabbits are near the fence?",
+          "model": "There are two rabbits.",
+          "alternatives": [],
+          "tip": "数围栏旁的两只兔子。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What animal do you like best?",
+          "model": "I like penguins best.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Have you ever visited a zoo?",
+          "model": "Yes, I have. I saw pandas last year.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "topic": "Rainy Days",
+      "passage": "Rainy days can be fun at home. Children can draw pictures or play board games with their families. They can also read stories and enjoy a quiet afternoon together.",
+      "scene": "scene_10_umbrella.svg",
+      "scene_type": "umbrella",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What can children play with their families on rainy days?",
+          "model": "They can play board games.",
+          "alternatives": [],
+          "tip": "注意题目问 play 什么游戏。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl holding?",
+          "model": "She is holding an umbrella.",
+          "alternatives": [],
+          "tip": "umbrella 是元音开头，用 an。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many umbrellas are in the stand?",
+          "model": "There are three umbrellas.",
+          "alternatives": [],
+          "tip": "只数伞架里的三把伞，不包括女孩手中的伞。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you do when it rains?",
+          "model": "I usually read books at home.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you enjoy playing board games?",
+          "model": "Yes, I do. I play them with my brother.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "topic": "Keeping Beaches Clean",
+      "passage": "Many people enjoy visiting beaches in summer. Sometimes they find rubbish on the sand. Volunteers collect it every week, so visitors can enjoy a clean and safe beach.",
+      "scene": "scene_11_beach.svg",
+      "scene_type": "beach",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do volunteers collect rubbish every week?",
+          "model": "Because visitors can enjoy a clean and safe beach.",
+          "alternatives": [],
+          "tip": "rubbish 是垃圾，找 so 后面的结果来回答。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy picking up?",
+          "model": "He is picking up a bottle.",
+          "alternatives": [],
+          "tip": "pick up 表示捡起。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many balls are on the sand?",
+          "model": "There are three balls.",
+          "alternatives": [],
+          "tip": "只数沙地上的三个球。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you like to do in summer?",
+          "model": "I like to swim in the sea.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you want to help clean a beach?",
+          "model": "Yes, I do. I want to protect animals.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "topic": "Using Computers",
+      "passage": "Computers are useful for school projects. Students can search for information and write reports with them. They can share their work easily, so many classes use computers for group activities.",
+      "scene": "scene_12_computer.svg",
+      "scene_type": "computer",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What can students write with computers?",
+          "model": "They can write reports.",
+          "alternatives": [],
+          "tip": "write reports 表示写报告。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy using?",
+          "model": "He is using a computer.",
+          "alternatives": [],
+          "tip": "用 is using 回答正在使用的东西。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many pencils are next to the computer?",
+          "model": "There are two pencils.",
+          "alternatives": [],
+          "tip": "只数电脑旁的两支铅笔。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you use a computer for?",
+          "model": "I use it to study English.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like working in a group?",
+          "model": "Yes, I do. I can learn from my friends.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "topic": "Winter Fun",
+      "passage": "Children enjoy playing outside in winter. When there is snow, they can make snowmen with their friends. Some children also take photos because they want to remember these special days.",
+      "scene": "scene_13_snow.svg",
+      "scene_type": "snow",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do some children take photos in winter?",
+          "model": "Because they want to remember these special days.",
+          "alternatives": [],
+          "tip": "because 后面的句子直接给出了原因。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl making?",
+          "model": "She is making a snowman.",
+          "alternatives": [],
+          "tip": "make 的进行时是 making。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many snowmen are in the picture?",
+          "model": "There are two snowmen.",
+          "alternatives": [],
+          "tip": "包括女孩正在做的雪人，共两个。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What season do you like best?",
+          "model": "I like winter best because I enjoy snow.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Have you ever played in the snow?",
+          "model": "Yes, I have. I made a snowman last winter.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "topic": "Birthday Parties",
+      "passage": "Some children have small birthday parties at home. They invite friends and eat cake together. Their friends bring cards with kind messages, so birthdays can become happy memories for everyone.",
+      "scene": "scene_14_birthday.svg",
+      "scene_type": "birthday",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What do friends bring to birthday parties?",
+          "model": "They bring cards with kind messages.",
+          "alternatives": [],
+          "tip": "注意 bring 是带来，答案从原文提取。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy carrying?",
+          "model": "He is carrying a cake.",
+          "alternatives": [],
+          "tip": "carry 的进行时是 carrying。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many candles are on the cake?",
+          "model": "There are six candles.",
+          "alternatives": [],
+          "tip": "数蛋糕上的六根蜡烛。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you want for your next birthday?",
+          "model": "I want a new book.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like making cards?",
+          "model": "Yes, I do. I make cards for my friends.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "topic": "Eating Breakfast",
+      "passage": "A good breakfast helps students start their day. Some families eat bread, fruit, and eggs together. Students have more energy after breakfast, so they can enjoy their morning lessons at school.",
+      "scene": "scene_15_breakfast.svg",
+      "scene_type": "breakfast",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why can students enjoy their morning lessons after breakfast?",
+          "model": "Because they have more energy.",
+          "alternatives": [],
+          "tip": "energy 表示精力，找 so 前面的原因。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl eating?",
+          "model": "She is eating bread.",
+          "alternatives": [],
+          "tip": "bread 是不可数名词，不加 a。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many cups are on the table?",
+          "model": "There are three cups.",
+          "alternatives": [],
+          "tip": "只数桌面上的三个杯子。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What did you eat for breakfast today?",
+          "model": "I ate rice and eggs.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you eat breakfast every day?",
+          "model": "Yes, I do. I usually eat it at seven.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "topic": "Having Picnics",
+      "passage": "A picnic is a simple way to enjoy nature. Families bring food and drinks to a park. They can eat under the trees and spend a relaxing afternoon outside together.",
+      "scene": "scene_16_picnic.svg",
+      "scene_type": "picnic",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What do families bring to a park for a picnic?",
+          "model": "They bring food and drinks.",
+          "alternatives": [],
+          "tip": "问题问带什么，用 They bring 回答。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy doing?",
+          "model": "He is drinking water.",
+          "alternatives": [],
+          "tip": "drink water 表示喝水。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many oranges are on the picnic sheet?",
+          "model": "There are five oranges.",
+          "alternatives": [],
+          "tip": "数野餐垫上的五个橙子。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Where do you like to eat lunch on weekends?",
+          "model": "I like to eat lunch at home.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you enjoy eating outside?",
+          "model": "Yes, I do. I like having picnics in spring.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "topic": "Cleaning Our School",
+      "passage": "Students in many schools clean their classrooms together. They sweep the floors and wipe the desks after lunch. Working together makes cleaning easier, so they can finish it quickly.",
+      "scene": "scene_17_cleaning.svg",
+      "scene_type": "cleaning",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why can students finish cleaning quickly?",
+          "model": "Because working together makes cleaning easier.",
+          "alternatives": [],
+          "tip": "working together 表示一起工作。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is sweeping the floor.",
+          "alternatives": [],
+          "tip": "sweep the floor 表示扫地。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many buckets are beside the door?",
+          "model": "There are two buckets.",
+          "alternatives": [],
+          "tip": "只数门旁的两个水桶。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "How often do you clean your room?",
+          "model": "I clean my room once a week.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you think keeping your school clean is important?",
+          "model": "Yes, I do. A clean classroom is comfortable.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "topic": "Enjoying Art",
+      "passage": "Drawing is a hobby that many children enjoy. They can use different colours to show their ideas. Some children draw flowers in their gardens because they like looking closely at nature.",
+      "scene": "scene_18_drawing.svg",
+      "scene_type": "drawing",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do some children draw flowers in their gardens?",
+          "model": "Because they like looking closely at nature.",
+          "alternatives": [],
+          "tip": "用 because 后的原因回答。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is drawing a picture.",
+          "alternatives": [],
+          "tip": "draw a picture 表示画画。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many flowers are in the vase?",
+          "model": "There are four flowers.",
+          "alternatives": [],
+          "tip": "只数花瓶里的四朵花，不数画纸上的花。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you like to draw?",
+          "model": "I like to draw animals.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you enjoy visiting art museums?",
+          "model": "Yes, I do. I like looking at paintings.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "topic": "Looking After Pets",
+      "passage": "Pets need food, water, and exercise every day. Children can help their families look after them. By doing these jobs, children can learn to think about the needs of others.",
+      "scene": "scene_19_pets.svg",
+      "scene_type": "pets",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "How can children learn to think about the needs of others?",
+          "model": "By helping their families look after pets.",
+          "alternatives": [],
+          "tip": "How 问方法，可用 By 加动词 ing 回答。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy doing?",
+          "model": "He is feeding a dog.",
+          "alternatives": [],
+          "tip": "feed 表示喂食。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many bowls are on the ground?",
+          "model": "There are three bowls.",
+          "alternatives": [],
+          "tip": "只数地上的三个碗。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What pet would you like to have?",
+          "model": "I would like to have a cat.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like walking dogs?",
+          "model": "Yes, I do. I sometimes walk my dog after school.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "topic": "Travelling by Train",
+      "passage": "Trains help people travel to many places. Passengers can read books or enjoy the view during their journey. Trains can carry many people at once, so they are useful in busy cities.",
+      "scene": "scene_20_station.svg",
+      "scene_type": "station",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why are trains useful in busy cities?",
+          "model": "Because they can carry many people at once.",
+          "alternatives": [],
+          "tip": "at once 表示一次、同时。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl carrying?",
+          "model": "She is carrying a suitcase.",
+          "alternatives": [],
+          "tip": "suitcase 表示行李箱。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many bags are on the bench?",
+          "model": "There are two bags.",
+          "alternatives": [],
+          "tip": "只数长椅上的两个包，不数女孩的行李箱。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Where would you like to travel?",
+          "model": "I would like to travel to Kyoto.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like travelling by train?",
+          "model": "Yes, I do. I enjoy looking out of the window.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "topic": "Swimming Lessons",
+      "passage": "Many children take swimming lessons at a local pool. Teachers show them how to move safely in the water. With regular practice, children can become stronger swimmers and feel more confident.",
+      "scene": "scene_21_swimming.svg",
+      "scene_type": "swimming",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "What do teachers show children at a swimming pool?",
+          "model": "They show them how to move safely in the water.",
+          "alternatives": [],
+          "tip": "注意 show them how to 的结构。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy doing?",
+          "model": "He is swimming.",
+          "alternatives": [],
+          "tip": "swim 的进行时双写 m，swimming。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many swimming rings are on the wall?",
+          "model": "There are four swimming rings.",
+          "alternatives": [],
+          "tip": "只数墙上挂着的四个游泳圈。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you like to do on hot days?",
+          "model": "I like to swim at the pool.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Can you swim?",
+          "model": "Yes, I can. I learned to swim at school.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "topic": "Recycling at Home",
+      "passage": "Recycling helps us use things again. Many families put paper, cans, and bottles into different boxes. They sort these things carefully, so less rubbish needs to be thrown away.",
+      "scene": "scene_22_recycling.svg",
+      "scene_type": "recycling",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do families sort paper, cans, and bottles carefully?",
+          "model": "Because less rubbish needs to be thrown away.",
+          "alternatives": [],
+          "tip": "less rubbish 是更少的垃圾，原因用 Because 回答。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl going to do?",
+          "model": "She is going to put a bottle into the box.",
+          "alternatives": [],
+          "tip": "瓶子正在箱口上方，用 be going to 表示接下来要做的动作。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many boxes are on the floor?",
+          "model": "There are three boxes.",
+          "alternatives": [],
+          "tip": "数地上的三个箱子。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What do you do to help the environment?",
+          "model": "I bring my own bag when I go shopping.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you recycle at home?",
+          "model": "Yes, I do. I put bottles in a special box.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "topic": "Writing Letters",
+      "passage": "People can send messages quickly on their phones. However, some people still enjoy writing letters. They can choose pretty paper and draw pictures, so their letters feel special to the reader.",
+      "scene": "scene_23_letters.svg",
+      "scene_type": "letters",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do some letters feel special to the reader?",
+          "model": "Because people can choose pretty paper and draw pictures.",
+          "alternatives": [],
+          "tip": "用 so 前面的两项活动回答原因。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the boy doing?",
+          "model": "He is writing a letter.",
+          "alternatives": [],
+          "tip": "write 去掉 e 再加 ing。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many envelopes are on the table?",
+          "model": "There are two envelopes.",
+          "alternatives": [],
+          "tip": "只数桌面的两个信封，不数正在写的信纸。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Who do you often send messages to?",
+          "model": "I often send messages to my friends.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Have you ever written a letter in English?",
+          "model": "Yes, I have. I wrote one to my teacher.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "topic": "Daily Exercise",
+      "passage": "Doing a little exercise every day is good for us. People can walk, run, or jump rope near their homes. These activities help them stay healthy, so many families enjoy them together.",
+      "scene": "scene_24_rope.svg",
+      "scene_type": "rope",
+      "questions": [
+        {
+          "kind": "passage",
+          "prompt": "Why do many families enjoy walking, running, or jumping rope?",
+          "model": "Because these activities help them stay healthy.",
+          "alternatives": [],
+          "tip": "stay healthy 表示保持健康。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "What is the girl doing?",
+          "model": "She is jumping rope.",
+          "alternatives": [],
+          "tip": "jump rope 表示跳绳。"
+        },
+        {
+          "kind": "picture",
+          "prompt": "How many trees are behind the girl?",
+          "model": "There are three trees.",
+          "alternatives": [],
+          "tip": "数女孩身后的三棵树。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "What exercise do you do after school?",
+          "model": "I often walk with my friends.",
+          "alternatives": [],
+          "tip": "可以替换成自己的真实情况，先用完整短句回答。"
+        },
+        {
+          "kind": "personal",
+          "prompt": "Do you like exercising in the morning?",
+          "model": "Yes, I do. It helps me wake up.",
+          "alternatives": [],
+          "tip": "先回答 Yes 或 No，再补一句真实经历或理由；示例可以替换。"
+        }
       ]
     }
   ]

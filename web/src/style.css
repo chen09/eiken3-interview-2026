@@ -206,3 +206,5 @@ footer.wrap { padding: 24px 0 30px; margin-top: 24px; border-top: 1px solid var(
   button { transition: none; }
   button:active { transform: none; }
 }
+.set-groups{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}.set-groups button{min-height:44px;padding:9px 18px}.set-groups [aria-current=page]{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+.official-materials{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 24px;margin-bottom:30px;background:var(--soft);border-radius:14px}.official-materials h2{font-size:18px;margin:0 0 6px}.official-materials p{font-size:13px;color:var(--muted);margin:0;line-height:1.7}.official-links{display:flex;flex-direction:column;gap:10px;flex-shrink:0}.official-links a{color:var(--accent);font-size:14px;font-weight:700;text-underline-offset:4px;min-height:28px;display:flex;align-items:center}.official-links a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}@media(max-width:767px){.official-materials{align-items:start;flex-direction:column;gap:14px;padding:20px}.official-links{flex-shrink:1}}

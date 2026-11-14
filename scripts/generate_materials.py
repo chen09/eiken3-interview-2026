@@ -50,7 +50,7 @@ def write_pdf(name,body):
 
 student=[]
 for set_ in DATA['sets']:
- pic=(ROOT/'assets'/'scenes'/SVG[set_['id']]).as_uri()
+ pic=(ROOT/'assets'/'scenes'/set_.get('scene', SVG.get(set_['id'], ''))).as_uri()
  student.append(f'''<section class="page">
  <div class="eyebrow">EIKEN GRADE 3 · INTERVIEW CARD {set_['id']}</div>
  <h1>{escape(set_['topic'])}</h1>

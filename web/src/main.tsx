@@ -10,13 +10,15 @@ import './style.css';
 type Rating = 'good' | 'almost' | 'again';
 type Progress = {sessions: {setId:string; rating:Rating; date:string}[]; review:string[]};
 const labels: Record<Rating,string> = {good:'できた', almost:'もう少し', again:'もう一度'};
-const scenes: Record<string,string> = {'01':'scene_01_library.svg','02':'scene_02_park.svg','03':'scene_03_kitchen.svg','04':'scene_04_tennis.svg'};
+const originalScenes: Record<string,string> = {'01':'scene_01_library.svg','02':'scene_02_park.svg','03':'scene_03_kitchen.svg','04':'scene_04_tennis.svg'};
+const scenes = Object.fromEntries(exams.sets.map(set => [set.id, set.scene ?? originalScenes[set.id]]));
 const key = 'eiken3-progress-v1';
 function loadProgress(): Progress { try {const p=JSON.parse(localStorage.getItem(key) || '{}'); return {sessions:Array.isArray(p.sessions)?p.sessions:[],review:Array.isArray(p.review)?p.review:[]};} catch {return {sessions:[],review:[]};} }
 function App(){
  const [progress,setProgress]=useState<Progress>(loadProgress);
  const [page,setPage]=useState<'home'|'session'|'personal'|'progress'>('home');
  const [setId,setSetId]=useState('01');
+ const [setGroup,setSetGroup]=useState(0);
  const [step,setStep]=useState(0);
  const [rate,setRate]=useState(1); const [personalIndex,setPersonalIndex]=useState(0);
  const [audioError,setAudioError]=useState('');
@@ -103,9 +105,22 @@ function App(){
    <h1>声に出して、<br className="mobile-break" />一歩ずつ。</h1>
    <p>英文を聞く。質問に答える。お手本をまねしてみよう。</p>
   </section>
-  <div className="section-title"><h2>模擬面接をえらぶ</h2><span>4セット・各5問</span></div>
+  <aside className="official-materials" aria-label="英検協会の公式教材">
+   <div><h2>まずは公式サンプルを確認</h2><p>英検協会が公開している問題カード・質問・解答例です。</p></div>
+   <div className="official-links">
+    <a href="https://www.eiken.or.jp/eiken/exam/virtual/grade_3/pdf/grade_3.pdf" target="_blank" rel="noopener noreferrer">公式サンプル問題・解答（PDF）</a>
+    <a href="https://www.eiken.or.jp/eiken/exam/virtual/grade_3/" target="_blank" rel="noopener noreferrer">公式の面接の流れを見る</a>
+   </div>
+  </aside>
+  <div className="section-title"><h2>模擬面接をえらぶ</h2><span>{exams.sets.length}セット・各5問</span></div>
+  <nav className="set-groups" aria-label="セットの一覧ページ">
+   {Array.from({length: Math.ceil(exams.sets.length / 6)}, (_, group) =>
+    <button key={group} className="secondary" aria-current={setGroup === group ? 'page' : undefined} onClick={() => setSetGroup(group)}>
+     {group * 6 + 1}〜{Math.min((group + 1) * 6, exams.sets.length)}
+    </button>)}
+  </nav>
   <div className="grid">
-   {exams.sets.map(set => <article className="set-card" key={set.id}>
+   {exams.sets.slice(setGroup * 6, (setGroup + 1) * 6).map(set => <article className="set-card" key={set.id}>
     <img src={`${import.meta.env.BASE_URL}scenes/${scenes[set.id]}`} alt="" width="960" height="420" />
     <div className="set-content">
      <p className="set-meta">セット {Number(set.id)}<span>{progress.sessions.filter(session => session.setId === set.id).length}回 完了</span></p>
